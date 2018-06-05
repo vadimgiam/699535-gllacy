@@ -52,7 +52,7 @@
             <span class="visually-hidden">Поиск</span>
           </a>
           <!-- Popup search -->
-          <form class="visually-hidden" action="htmlacademy.ru">
+          <form class="visually-hidden" action="https://echo.htmlacademy.ru/">
             <label class="visually-hidden">
               <span class="visually-hidden">Поиск</span>
               <input type="text" name="search" placeholder="Что ищем?">
@@ -65,7 +65,7 @@
             <span class="login-text">Вход</span>
           </a>
           <!--login-form popup-->
-          <form action="htmlacademy.ru" class="login-form">
+          <form action="https://echo.htmlacademy.ru/" class="login-form">
             <p>
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
@@ -77,7 +77,7 @@
               </label>
             </p>
             <p class="login-form__sub">
-              <button type="button" class="button button__login">
+              <button type="submit" class="button button__login">
                 <span class="button__login-text">Войти</span>
               </button>
               <a href="#" class="login-form__sub-link"> Забыли пароль?</a>
@@ -166,57 +166,56 @@
             <h2 class="fat-title">Жирность:</h2>
             <ul class="fat-radio__list">
               <li class="fat-item">
-                <input type="radio" id="radiofirst" class="radio__input">
+                <input type="radio" id="radiofirst" name="radio1" class="radio__input">
                 <label class="radio__label" for="radiofirst">0%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiosecond" class="radio__input">
+                <input type="radio" id="radiosecond" name="radio2" class="radio__input">
                 <label class="radio__label" for="radiosecond">до 10%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiothird" class="radio__input">
+                <input type="radio" id="radiothird" name="radio3" class="radio__input">
                 <label class="radio__label" for="radiothird">до 30%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiofourth" class="radio__input">
+                <input type="radio" id="radiofourth" name="radio4" class="radio__input">
                 <label class="radio__label" for="radiofourth">Выше 30%</label>
               </li>
             </ul>
           </div>
 
         </div>
-        <div class="filters__checkbox-button">
+        <div class="filters__checkboxes">
           <div class="fillers-checkbox">
             <h2 class="fillers-title">Наполнители:</h2>
             <ul class="fillers-checkbox__list">
               <li class="fillers-item">
-                <input type="checkbox" id="checkbox1" class="checkbox__input">
+                <input type="checkbox" id="checkbox1" name="checkbox1" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox1">Шоколадные</label>
               </li>
               <li class="fillers-item">
-                <input type="checkbox" id="checkbox2" class="checkbox__input">
+                <input type="checkbox" id="checkbox2" name="checkbox2" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox2">Сахарные присыпки</label>
               </li>
               <li class="fillers-item">
-                <input type="checkbox" id="checkbox3" class="checkbox__input">
+                <input type="checkbox" id="checkbox3" name="checkbox3" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox3">Фрукты</label>
               </li>
               <li class="fillers-item">
-                <input type="checkbox" id="checkbox4" class="checkbox__input">
+                <input type="checkbox" id="checkbox4" name="checkbox4" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox4">Сиропы</label>
               </li>
               <li class="fillers-item">
-                <input type="checkbox" id="checkbox5" class="checkbox__input">
+                <input type="checkbox" id="checkbox5" name="checkbox5" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox5">Джемы</label>
               </li>
             </ul>
           </div>
 
-          <p>
-            <button type="button" class="button button__form">Применить</button>
-          </p>
         </div>
-
+        <div class="filters__button">
+          <button type="button" class="button button__form">Применить</button>
+        </div>
       </form>
 
     </section>
@@ -224,12 +223,12 @@
       <h2 class="catalog-main visually-hidden">Каталог мороженного</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitorange.png" width="267" height="267" alt="хит">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">310₽
             <span class="price__measure">/кг</span>
           </p>
@@ -241,12 +240,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitcofee.png" width="267" height="267" alt="хит">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">380₽
             <span class="price__measure">/кг</span>
           </p>
@@ -258,12 +257,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitstrawberry.png" width="267" height="267" alt="хит">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">355₽
             <span class="price__measure">/кг</span>
           </p>
@@ -275,12 +274,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitcaramel.png" width="267" height="267" alt="хит">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">415₽
             <span class="price__measure">/кг</span>
           </p>
@@ -292,12 +291,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/cowberry.png" width="267" height="267" alt="брусничное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">325₽
             <span class="price__measure">/кг</span>
           </p>
@@ -309,12 +308,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/bilberry.png" width="267" height="267" alt="черничное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">410₽
             <span class="price__measure">/кг</span>
           </p>
@@ -326,12 +325,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/lemon.png" width="267" height="267" alt="лимонное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">375₽
             <span class="price__measure">/кг</span>
           </p>
@@ -343,12 +342,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/chocolate.png" width="267" height="267" alt="шоколадное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">320₽
             <span class="price__measure">/кг</span>
           </p>
@@ -360,12 +359,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/vanilla.png" width="267" height="267" alt="ванильное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">440₽
             <span class="price__measure">/кг</span>
           </p>
@@ -377,12 +376,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/menthol.png" width="267" height="267" alt="ментоловое">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">435₽
             <span class="price__measure">/кг</span>
           </p>
@@ -394,12 +393,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/chocolateblack.png" width="267" height="267" alt="шоколадное">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">355₽
             <span class="price__measure">/кг</span>
           </p>
@@ -411,12 +410,12 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item-image">
+          <div class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/mint.png" width="267" height="267" alt="ссиропом">
             </a>
-          </p>
+          </div>
           <p class="catalog__price price">420₽
             <span class="price__measure">/кг</span>
           </p>
@@ -479,23 +478,24 @@
         </li>
       </ul>
     
-
-    <p class="aboutus-production">
-      <a href="">
-        <b> Для поставщиков</b>
-      </a>
+    <div class="aboutus">
+     <div class="aboutus-production">
+       <a href="">
+         <strong> Для поставщиков</strong>
+       </a>
       
-      <a href=""> О производстве</a>
-    </p>
-    <p class="aboutus-documents">
-      <a href=""> Наши документы</a>
+       <a href=""> О производстве</a>
+     </div>
+     <div class="aboutus-documents">
+       <a href=""> Наши документы</a>
       
-      <a href=""> Экологические стандарты</a>
-    </p>
+       <a href=""> Экологические стандарты</a>
+     </div>
+    </div>
     <div class="produced">
-      <p>
+      <div>
         <img src="img/svg/logohtmla.svg" alt="htmlacademy" width="110" height="38">
-      </p>
+      </div>
       <p>Сделано в
         <a href="htmlacademy.ru">HTML Academy </a> © 2017</p>
     </div>
