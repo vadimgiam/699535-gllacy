@@ -14,40 +14,40 @@
       <a href="index.html" class="main-header__logo">
         <img src="img/svg/Logo.svg" alt="GllacyShop" class="main-header__image" height="67" width="157">
       </a>
-      <ul class="main-header__info__list info__list">
-        <li class="info__list__item info__list__item--catalog">
+      <ul class="main-header__info-list info__list">
+        <li class="info__list-item info__list__item--catalog">
           <a href="#" class="catalog__link">
             <span class="catalog__title">Каталог</span>
           </a>
           <!--catalog-list popup-->
           <ul class="header-catalog-list catalog-list visually-hidden">
             <li class="catalog-list__item">
-              <a href="#" class="catalog__list__link"> Новинки </a>
+              <a href="#" class="catalog__list-link"> Новинки </a>
             </li>
             <li class="catalog-list__item">
-              <a href="catalog.html" class="catalog__list__link"> Сливочное </a>
+              <a href="catalog.html" class="catalog__list-link"> Сливочное </a>
             </li>
             <li class="catalog-list__item">
-              <a href="#" class="catalog__list__link"> Щербеты </a>
+              <a href="#" class="catalog__list-link"> Щербеты </a>
             </li>
             <li class="catalog-list__item">
-              <a href="#" class="catalog__list__link"> Фруктовый лед </a>
+              <a href="#" class="catalog__list-link"> Фруктовый лед </a>
             </li>
             <li class="catalog-list__item">
-              <a href="#" class="catalog__list__link"> Малорин </a>
+              <a href="#" class="catalog__list-link"> Малорин </a>
             </li>
           </ul>
           <!--catalog-list popup close-->
         </li>
-        <li class="info__list__li">
-          <a href="" class="info__list__li__link">Доставка и оплата</a>
+        <li class="info__list-item">
+          <a href="" class="info__list-item-link">Доставка и оплата</a>
         </li>
-        <li class="info__list__li">
-          <a href="" class="info__list__li__link">О компании</a>
+        <li class="info__list-item">
+          <a href="" class="info__list-item-link">О компании</a>
         </li>
       </ul>
       <ul class="main-header__user-navigation user-navigation">
-        <li class="user-navigation__li">
+        <li class="user-navigation__item">
           <a href="#" class="button button__search">
             <span class="visually-hidden">Поиск</span>
           </a>
@@ -60,7 +60,7 @@
           </form>
           <!-- Popup search close-->
         </li>
-        <li class="user-navigation__li">
+        <li class="user-navigation__item">
           <a href="#" class="button button__login">
             <span class="login-text">Вход</span>
           </a>
@@ -78,14 +78,15 @@
             </p>
             <p class="login-form__sub">
               <button type="button" class="button button__login">
-                <span class="button__login__text">Войти</span>
+                <span class="button__login-text">Войти</span>
               </button>
-              <a href="#" class="login-form__sub__link"> Забыли пароль?</a>
-              <a href="#" class="login-form__sub__link">Новая регистрация</a>
+              <a href="#" class="login-form__sub-link"> Забыли пароль?</a>
+              <a href="#" class="login-form__sub-link">Новая регистрация</a>
+            </p>
           </form>
           <!--login-form popup close-->
         </li>
-        <li class="user-navigation__li">
+        <li class="user-navigation__item">
           <a href="#" class="button button__basket">
             <span class="basket-text">2 товара</span>
           </a>
@@ -109,7 +110,7 @@
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
-                <td class="basket-popup__cell__img"></td>
+                <td class="basket-popup__cell-img"></td>
                 <td class="basket-popup__cell">Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td class="basket-popup__cell">1,5 кг х 300 руб.</td>
                 <td class="basket-popup__cell">450 руб.</td>
@@ -118,7 +119,7 @@
                 <td>Итого:750 руб.</td>
               </tr>
             </table>
-            <button class="button button_basket__order">Оформить заказ</button>
+            <button class="button button_basket-order">Оформить заказ</button>
           </div>
           <!--basket popup close-->
         </li>
@@ -145,7 +146,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru" class="filter" method="GET">
-        <fieldset class="filters__select-range-radio">
+        <div class="filters__select-range-radio">
           <p>
             <label class="sorting-label" for="sorting">Сортировка:</label>
             <select class="sorting__list" name="sorting" id="sorting">
@@ -161,9 +162,9 @@
             
             <input class="filters__range-input" name="range" id="range" type="range" min="100" max="500" step="50">
           </p>
-          <p>
+          <div class="fat-radio fat">
             <h2 class="fat-title">Жирность:</h2>
-            <ul class="fat-radio">
+            <ul class="fat-radio__list">
               <li class="fat-item">
                 <input type="radio" id="radiofirst" class="radio__input">
                 <label class="radio__label" for="radiofirst">0%</label>
@@ -181,13 +182,13 @@
                 <label class="radio__label" for="radiofourth">Выше 30%</label>
               </li>
             </ul>
-          </p>
+          </div>
 
-        </fieldset>
-        <fieldset class="filters__checkbox-button">
-          <p>
+        </div>
+        <div class="filters__checkbox-button">
+          <div class="fillers-checkbox">
             <h2 class="fillers-title">Наполнители:</h2>
-            <ul class="fillers-checkbox">
+            <ul class="fillers-checkbox__list">
               <li class="fillers-item">
                 <input type="checkbox" id="checkbox1" class="checkbox__input">
                 <label class="checkbox__label" for="checkbox1">Шоколадные</label>
@@ -209,12 +210,12 @@
                 <label class="checkbox__label" for="checkbox5">Джемы</label>
               </li>
             </ul>
-          </p>
+          </div>
 
           <p>
             <button type="button" class="button button__form">Применить</button>
           </p>
-        </fieldset>
+        </div>
 
       </form>
 
@@ -223,7 +224,7 @@
       <h2 class="catalog-main visually-hidden">Каталог мороженного</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitorange.png" width="267" height="267" alt="хит">
@@ -240,7 +241,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitcofee.png" width="267" height="267" alt="хит">
@@ -257,7 +258,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitstrawberry.png" width="267" height="267" alt="хит">
@@ -274,7 +275,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/imagehitcaramel.png" width="267" height="267" alt="хит">
@@ -291,7 +292,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/cowberry.png" width="267" height="267" alt="брусничное">
@@ -308,7 +309,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/bilberry.png" width="267" height="267" alt="черничное">
@@ -325,7 +326,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/lemon.png" width="267" height="267" alt="лимонное">
@@ -342,7 +343,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/chocolate.png" width="267" height="267" alt="шоколадное">
@@ -359,7 +360,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/vanilla.png" width="267" height="267" alt="ванильное">
@@ -376,7 +377,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/menthol.png" width="267" height="267" alt="ментоловое">
@@ -393,7 +394,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/chocolateblack.png" width="267" height="267" alt="шоколадное">
@@ -410,7 +411,7 @@
           </p>
         </li>
         <li class="catalog__item">
-          <p class="catalog__item__image">
+          <p class="catalog__item-image">
             <a href="#" class="image__link">
 
               <img class="catalog__png" src="img/mint.png" width="267" height="267" alt="ссиропом">
