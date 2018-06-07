@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-header__navigation">
       <a class="main-header__logo">
-        <img src="img/svg/Logo.svg" alt="GllacyShop" class="main-header__image" height="67" width="157">
+        <img src="img/svg/Logo.svg" alt="Gllacy Shop logo" class="main-header__image" height="67" width="157">
       </a>
       <ul class="main-header__info-list info__list">
         <li class="info__list-item info__list-item--catalog">
@@ -53,7 +53,7 @@
             <span class="visually-hidden">Поиск</span>
           </a>
           <!-- Popup search -->
-          <form class="visually-hidden" action="https://echo.htmlacademy.ru/">
+          <form class="visually-hidden" action="https://echo.htmlacademy.ru/" method="POST">
             <label class="visually-hidden">
               <span class="visually-hidden">Поиск</span>
               <input type="text" name="search" placeholder="Что ищем?">
@@ -66,7 +66,7 @@
             <span class="login-text">Вход</span>
           </a>
           <!--login-form popup-->
-          <form action="https://echo.htmlacademy.ru/" class="login-form">
+          <form action="https://echo.htmlacademy.ru/" class="login-form" method="POST">
             <p>
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
@@ -96,7 +96,7 @@
             <table class="basket-popup__table">
               <tr class="basket-popup__string">
                 <td class="basket-popup__cell">
-                  <a class="basket__del">
+                  <a href="#" class="basket__del">
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
@@ -107,7 +107,7 @@
               </tr>
               <tr class="basket-popup__string">
                 <td class="basket-popup__cell">
-                  <a class="basket__del">
+                  <a href="#" class="basket__del">
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
@@ -135,7 +135,7 @@
 
   <section class="slider">
     <div class="slider__radio">
-      <form action="https://echo.htmlacademy.ru/" class="slider__radio-form">
+      <form action="https://echo.htmlacademy.ru/" class="slider__radio-form" method="POST">
         <label for="radio1" class="radio1-label visually-hidden"></label>
         <input type="radio" name="slider" id="radio1" class="radio1-input visually-hidden">
         <label for="radio2" class="radio2-label visually-hidden"></label>
@@ -284,12 +284,13 @@
         
       </section>
       <section class="subscription">
+        <h3 class="visually-hidden">Подписка на рассылку</h3>
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
           всего самого вкусного, что у нас происходит. Обещаем не спамить
           и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <form action="https://echo.htmlacademy.ru/" class="subscription__form">
+        <form action="https://echo.htmlacademy.ru/" class="subscription__form" method="POST">
           <input type="text" name="subscription" placeholder="Электронная почта">
           <button type="submit" class="button button__subscription">Отправить</button>
         </form>
