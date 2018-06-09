@@ -298,15 +298,13 @@
     </div>
     <section class="map">
       <h3 class="visually-hidden">Карта</h3>
-      <img src="img/svg/pointer.svg" alt="pointer" class="map__pointer" height="140" width="78">
-
-
+      
       <p>
         <img src="img/map.jpg" alt="Адрес Большая Конюшенная,19" width="1200" height="430">
       </p>
 
-      <!--popup feedback-->
-      <section class="feedback-popup">
+      <!-- feedback-->
+      <section class="feedback">
         <p>
           Адрес главного офиса и офлайн-магазина:</p>
         <p>
@@ -324,7 +322,7 @@
         </p>
         <button type="button" class="button button__feedback">Форма обратной связи</button>
       </section>
-      <!--popup feedback close-->
+      <!-- feedback close-->
     </section>
   </main>
 
@@ -375,6 +373,24 @@
         <a href="htmlacademy.ru">HTML Academy </a> © 2017</p> 
     </div>
   </footer>
+  <!--popup-feedback-->
+  <section class="popup-feedback">
+   <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+   <p>
+     <label for="feedbackname" class="visually-hidden">имя</label>
+      <input type="text" class="feedback-name" name="name" id="feedbackname" placeholder="Как вас зовут?">
+      <label for="feedbackemale" class="visually-hidden">почта</label>
+      <input type="text" class="feedback-email" name="name" id="feedbackemale" placeholder="Ваша почта для ответа?">
+   </p>
+   <p>
+     <label for="feedbacktext" class="visually-hidden">Поле для отзыва</label>
+     <textarea class="feedback-text" name="feedbacktext" id="feedbacktext" cols="30" rows="10"></textarea>
+   </p>
+   
+     <button type="submit" class="button button__feedback-popup">Отправить</button>
+     <button class="button button__close">Закрыть</button>
+  </section>
+   <!--popup-feedback close-->
 </body>
 
 </html>
