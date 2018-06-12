@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Gllacy</title>
 </head>
 
-<body class="body-bg">
+<body class="body-main">
   <header class="main-header">
     <nav class="main-header__navigation">
       <a class="main-header__logo">
@@ -23,7 +24,7 @@
           <!--catalog-list popup-->
           <ul class="header-catalog-list  visually-hidden">
             <li class="catalog-list__item">
-              <a href="#" class="catalog__list-link"> Новинки </a>
+              <a href="#" class="catalog__list-link list-link--new"> Новинки </a>
             </li>
             <li class="catalog-list__item">
               <a href="catalog.html" class="catalog__list-link"> Сливочное </a>
@@ -49,24 +50,24 @@
       </ul>
       <ul class="main-header__user-navigation user-navigation">
         <li class="user-navigation__item">
-          <a href="#" class="button button__search">
+          <a href="#" class="button__search">
             <span class="visually-hidden">Поиск</span>
           </a>
           <!-- Popup search -->
-          <form class="visually-hidden" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="visually-hidden">
-              <span class="visually-hidden">Поиск</span>
+          <form class="form-search visually-hidden" action="https://echo.htmlacademy.ru/" method="POST">
+            <label class="visually-hidden ">
+              <span class="visually-hidden form-search__img">Поиск</span>
               <input type="text" name="search" placeholder="Что ищем?">
             </label>
           </form>
           <!-- Popup search close-->
         </li>
         <li class="user-navigation__item">
-          <a href="#" class="button button__login">
+          <a href="#" class="button__login">
             <span class="login-text">Вход</span>
           </a>
           <!--login-form popup-->
-          <form action="https://echo.htmlacademy.ru/" class="login-form" method="POST">
+          <form action="https://echo.htmlacademy.ru/" class="login-form visually-hidden" method="POST">
             <p>
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
@@ -88,7 +89,7 @@
           <!--login-form popup close-->
         </li>
         <li class="user-navigation__item">
-          <a href="#" class="button button__basket">
+          <a href="#" class="button__basket">
             <span class="basket-text">Пусто</span>
           </a>
           <!--basket popup-->
@@ -100,9 +101,9 @@
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
-                <td class="basket-popup__cell__img"></td>
-                <td class="basket-popup__cell">Пломбир с апельсиновым джемом</td>
-                <td class="basket-popup__cell">1,5 кг х 200 руб.</td>
+                <td class="basket-popup__cell__img-orange"><a href="#"></a></td>
+                <td class="basket-popup__cell"><a href="#">Пломбир с апельсиновым джемом</a></td>
+                <td class="basket-popup__cell">1,5 кг х <span>200 руб.</span></td>
                 <td class="basket-popup__cell">300 руб.</td>
               </tr>
               <tr class="basket-popup__string">
@@ -111,13 +112,13 @@
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
-                <td class="basket-popup__cell-img"></td>
-                <td class="basket-popup__cell">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="basket-popup__cell">1,5 кг х 300 руб.</td>
+                <td class="basket-popup__cell-img-strawberry"> <a href="#"></a> </td>
+                <td class="basket-popup__cell"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                <td class="basket-popup__cell">1,5 кг х <span>300 руб.</span> </td>
                 <td class="basket-popup__cell">450 руб.</td>
               </tr>
               <tr class="basket-popup__string">
-                <td>Итого:750 руб.</td>
+                <td class="total-price">Итого:750 руб.</td>
               </tr>
             </table>
             <button class="button button__basket-order">Оформить заказ</button>
@@ -128,8 +129,8 @@
 
     </nav>
     <p class="main-header__mode mode__text">
-      С 10 до 20, ежедневно
-       8 812 450-25-25
+     <span class="mode__text-graph">С 10 до 20, ежедневно</span> 
+       <span class="mode__text-tel">8 812 450-25-25</span> 
     </p>
   </header>
 
@@ -305,19 +306,19 @@
 
       <!-- feedback-->
       <section class="feedback">
-        <p>
+        <p class="feedback__adress">
           Адрес главного офиса и офлайн-магазина:</p>
-        <p>
+        <p class="feedback__street">
           <strong>
             ул. Большая Конюшенная
             19/8, Санкт-Петербург
           </strong>
         </p>
-        <p> Для заказов по телефону:
+        <p class="feedback__tel"> Для заказов по телефону:
           
           <strong>8 812 450-25-25</strong>
         </p>
-        <p>
+        <p class="feedback__time">
           (с 10 до 20 ежедневно)
         </p>
         <button type="button" class="button button__feedback">Форма обратной связи</button>
@@ -353,8 +354,8 @@
     
     <div class="aboutus">
      <div class="aboutus-production">
-       <a href="#">
-         <strong> Для поставщиков</strong>
+       <a href="#" class="aboutus__heart">
+         <strong > Для поставщиков</strong>
        </a>
       
        <a href="#"> О производстве</a>
@@ -374,7 +375,7 @@
     </div>
   </footer>
   <!--popup-feedback-->
-  <section class="popup-feedback">
+  <section class="popup-feedback visually-hidden">
    <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
    <p>
      <label for="feedbackname" class="visually-hidden">имя</label>
@@ -384,7 +385,7 @@
    </p>
    <p>
      <label for="feedbacktext" class="visually-hidden">Поле для отзыва</label>
-     <textarea class="feedback-text" name="feedbacktext" id="feedbacktext" cols="30" rows="10"></textarea>
+     <textarea class="feedback-text" name="feedbacktext" id="feedbacktext" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
    </p>
    
      <button type="submit" class="button button__feedback-popup">Отправить</button>
