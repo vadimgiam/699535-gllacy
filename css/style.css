@@ -51,7 +51,7 @@ body {
 .main-header__info-list .info__list-item-link:focus {
    background-color: rgba(248, 247, 244, 0.988);
    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-      
+
 }
 
 .header-catalog-list {
@@ -59,6 +59,7 @@ body {
   background-color: #f8f7f4;
   width: 142px;
   border-radius: 5px;
+  padding-left: 0;
 }
 
 .catalog-list__item .catalog__list-link {
@@ -78,7 +79,7 @@ body {
 .catalog-list__item:hover {
   background-color: #fbded7;
   color: black;
-  
+
 }
 
 .catalog-list__item:active {
@@ -275,14 +276,20 @@ textarea:focus {
   background-image: url(../img/orangemini.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 33px 33px;
+
+  width: 33px;
+  height: 33px;
+  display: block;
 }
 
 .basket-popup__cell-img-strawberry a {
   background-image: url(../img/strawberrymini.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 33px 33px;
+
+  width: 33px;
+  height: 33px;
+  display: block;
 }
 
 /*basket close*/
@@ -306,17 +313,16 @@ textarea:focus {
 }
 
 .button:hover {
-  
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+
+  background-image: linear-gradient( 90deg, rgb(236,111,94) 0%, rgb(245,134,105) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-    
 }
 
 .button:active {
   background-image: linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   box-shadow: 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  outline: none;
+
 }
 
 .button__slider {
@@ -333,23 +339,24 @@ textarea:focus {
 }
 
 .button__slider:hover {
-  background-image: linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: linear-gradient( 90deg, rgb(236,111,94) 0%, rgb(245,134,105) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-  
+
 }
 
 .button__slider:active {
   background-image: linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  outline: none;
 }
 
 /*Базовая стилизация кнопок close*/
 
 /*Слайдер*/
 
-.slider__title {
+.slider .slider__title {
   font-size: 60px;
-  line-height: 80px;
+  line-height: 60px;
   font-weight: 700;
 }
 
@@ -357,7 +364,7 @@ textarea:focus {
 
 /*Базовая стилизация main*/
 
-.index-columns title2 {
+.index-columns .title2 {
   font-size: 35px;
   line-height: 41px;
 }
@@ -469,8 +476,8 @@ textarea:focus {
   position: absolute;
   width: 49px;
   height: 49px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 .advantages__image-sheet::before {
   content: "";
@@ -481,7 +488,7 @@ textarea:focus {
   width: 49px;
   height: 49px;
   top: 70px;
-  left: 0px;
+  left: 0;
 }
 .advantages__image-cow::before {
   content: "";
@@ -492,7 +499,7 @@ textarea:focus {
   width: 49px;
   height: 49px;
   top: -10px;
-  left: 0px;
+  left: 0;
 }
 .advantages__image-fridge::before {
   content: "";
@@ -503,7 +510,7 @@ textarea:focus {
   width: 49px;
   height: 49px;
   top: 70px;
-  left: 0px;
+  left: 0;
 }
 .blog-new {
   background-color: white;
@@ -531,7 +538,7 @@ textarea:focus {
 }
 .map__image img{
   width: 100%;
-  
+
 }
 .feedback {
   background-color: #fdfefe;
@@ -641,7 +648,10 @@ textarea:focus {
   color: black;
   outline: none;
 }
-
+.sorting__list:hover{
+  background-color:white;
+  color: black;
+}
 .sorting__list {
   border: none;
   background-color: #a9bab0;
@@ -671,7 +681,7 @@ textarea:focus {
   width: 298px;
   border-radius: 5px;
 }
-
+/*Pagination*/
 .pagination-list {
   list-style: none;
 }
@@ -683,34 +693,41 @@ textarea:focus {
     font-size: 16px;
     line-height: 18px;
     color: white;
-    
+
 }
 
 .pagination-item.pagination-item-back a{
    color: rgba(0, 0, 0, 0.1);
 }
-.pagination-item-current a {
-    
-}
-.pagination-item-current {
+
+.pagination-item-current a{
     color: black;
+    text-align: center;
+
     background-color: white;
     width: 27px;
     height: 27px;
     border-radius: 50%;
+    display: block;
 }
-.pagination-item:hover {
-    
+.pagination-item a {
+  text-align: center;
+  vertical-align: middle;
+}
+.pagination-item a:hover {
+    color: white;
+    text-align: center;
     background-color: #9db1a5;
     width: 27px;
     height: 27px;
     border-radius: 50%;
+    display: block;
 }
 .pagination-item-current a:hover,
-.pagination-item:hover {
+.pagination-item a:hover {
 color: white;
 }
-.pagination-item:active,
+
 .pagination-item a:active {
     color: black;
     background-color: white;
@@ -718,6 +735,7 @@ color: white;
     height: 27px;
     border-radius: 50%;
 }
+/*Pagination close*/
 /*Базовая стилизация main close*/
 
 /*Базовая стилизация footer*/
@@ -800,3 +818,31 @@ color: white;
     …
   }
   */
+
+  .Подложка {
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
+  }
+
+  .Подложка {
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+    position: absolute;
+    left: 360px;
+    top: 1485px;
+    width: 280px;
+    height: 65px;
+    z-index: 185;
+  }
+  .Подложка {
+    background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+
+  }
