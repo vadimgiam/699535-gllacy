@@ -874,7 +874,88 @@ color: white;
     width: 1px;
     height: 1px;
     margin: -1px;
-    …
   }
 /* visually-hidden close*/
 
+/*Сетки*/
+/*Хедер сетки*/
+
+.main-header__navigation {
+  width: 1146px;
+  margin:0 auto;
+  padding: 0 27px;
+  display:flex;
+  justify-content: flex-start;
+
+}
+
+.main-header__logo {
+  width: 157px;
+  height: 67px;
+  padding: 0;
+  padding-top:10px;
+  margin:0;
+  margin-right:24px;
+}
+.main-header__info-list {
+  margin: 0;
+  padding: 0;
+  padding-top:30px;
+  min-width: 351px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.main-header__user-navigation {
+  margin: 0;
+  padding: 0;
+  padding-top:20px;
+  min-width: 246px;
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode__text-wrapper {
+  width: 1146px;
+  margin: 0;
+  padding: 0;
+  margin:0 auto;
+  padding: 0 27px;
+}
+.main-header__mode {
+  margin:0;
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.slider {
+  width: 1146px;
+  margin: 0;
+  padding: 0;
+  margin:0 auto;
+  padding: 0 27px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.button__slider {
+  position: absolute;
+  left: 50%;
+  top:50%;
+}
+/*этот conteiner не работает в IE*/
+.container {
+  width: 1146px;
+
+  margin:0 auto;
+  padding: 0 27px;
+}
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+/*Хедер сетки close*/
+/*Сетки close*/
