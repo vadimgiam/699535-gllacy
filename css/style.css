@@ -97,7 +97,7 @@ body {
   line-height: 16px;
 }
 
-.user-navigation__item a {
+/*.user-navigation__item a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -106,6 +106,7 @@ body {
   color: black;
   border-radius: 5px;
 }
+*/
 .user-navigation__item .basket-full {
     background-color: #f8f7f4;
     color: black;
@@ -143,6 +144,7 @@ body {
 .user-navigation__item {
     position: relative;
 }
+/*
 .button__search::before {
     content: "";
     background-color:rgba(255, 255, 255, 0.2);
@@ -162,8 +164,23 @@ body {
     width: 33px;
     height: 33px;
     background-image: url(../img/lup.png);
+}*/
+.button__search-svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.2);
+  border-radius:50%;
+  text-align:center;
 }
-
+.button__search-svg:hover {
+  background-color:white;
+}
+.button__search-svg:hover path{
+fill: black;
+}
+/*
 .button__login::before{
     content: "";
     background-image: url(../img/svg/in.svg);
@@ -180,7 +197,39 @@ body {
     content: "";
     background-image: url(../img/inblack.png);
 }
-.button__basket::before {
+*/
+.login-text {
+  display: block;
+  width: 92px;
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+.login-text:hover {
+  background-color: white;
+color: black;
+}
+.login-text path {
+  fill: white;
+}
+.login-text:hover path {
+  fill:black;
+}
+
+.button__basket {
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+.basket-text {
+  display: block;
+  width: 99px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+.basket-text:hover {
+color: black;
+background-color: white;
+}
+.basket-text::before {
     content: "";
     background-image: url(../img/svg/busket.svg);
     width: 24px;
@@ -191,12 +240,16 @@ body {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.button__basket:hover::before {
+
+.basket-text:hover::before {
     content: "";
     background-image: url(../img/svg/busketred.svg);
+    background-color: white;
+
 }
-.basket-full::before {
+.basket-text__full::before {
     content: "";
     background-image: url(../img/svg/busketred.svg);
     width: 24px;
@@ -207,7 +260,13 @@ body {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: white;
 }
+.basket-full {
+  background-color: white;
+  border-radius: 25px;
+}
+
 /*Базовая стилизация полей ввода*/
 
 .form-search {
@@ -808,7 +867,7 @@ color: white;
 
 /*Базовая стилизация popup-feedback close*/
 
-/*
+/* visually-hidden*/
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -817,32 +876,5 @@ color: white;
     margin: -1px;
     …
   }
-  */
+/* visually-hidden close*/
 
-  .Подложка {
-    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-
-  }
-
-  .Подложка {
-    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-    position: absolute;
-    left: 360px;
-    top: 1485px;
-    width: 280px;
-    height: 65px;
-    z-index: 185;
-  }
-  .Подложка {
-    background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
-
-  }
