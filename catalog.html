@@ -13,6 +13,7 @@
 
 <body class="body-catalog">
   <header class="main-header">
+  <div class="nav-wrap">
     <nav class="main-header__navigation">
       <a href="index.html" class="main-header__logo">
         <img src="img/svg/Logo.svg" alt="Gllacy Shop logo" class="main-header__image" height="67" width="157">
@@ -23,7 +24,7 @@
             <span class="catalog__title">Каталог</span>
           </a>
           <!--catalog-list popup-->
-          <ul class="header-catalog-list catalog-list visually-hidden">
+          <ul class="header-catalog-list catalog-list">
             <li class="catalog-list__item">
               <a href="#" class="catalog__list-link list-link--new"> Новинки </a>
             </li>
@@ -49,6 +50,7 @@
           <a href="" class="info__list-item-link">О компании</a>
         </li>
       </ul>
+  </nav>
       <ul class="main-header__user-navigation user-navigation">
         <li class="user-navigation__item">
           <a href="#" class="button__search-link">
@@ -58,8 +60,8 @@
             </span>
           </a>
           <!-- Popup search -->
-          <form class="visually-hidden form-search" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="visually-hidden">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="POST">
+            <label >
               <span class="visually-hidden form-search__img">Поиск</span>
               <input type="text" name="search" placeholder="Что ищем?">
             </label>
@@ -74,7 +76,7 @@
                 </span>
               </a>
           <!--login-form popup-->
-          <form action="https://echo.htmlacademy.ru/" class="login-form visually-hidden" method="POST">
+          <form action="https://echo.htmlacademy.ru/" class="login-form" method="POST">
             <p>
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
@@ -100,7 +102,7 @@
             <span class=" basket-text__full">2 товара</span>
           </a>
           <!--basket popup-->
-          <div class="basket-popup visually-hidden">
+          <div class="basket-popup">
             <table class="basket-popup__table">
               <tr class="basket-popup__string">
                 <td class="basket-popup__cell">
@@ -133,7 +135,7 @@
           <!--basket popup close-->
         </li>
       </ul>
-</nav>
+    </div>
 
 <div class="mode__text-wrapper">
   <div class="container">
@@ -147,7 +149,7 @@
       <li class="breadcrumbs__item breadcrumbs__item--current">Сливочное</li>
     </ul>
     <p class="main-header__mode mode__text">
-      <span class="mode__text-graph">С 10 до 20, ежедневно</span><br>
+      <span class="mode__text-graph">С 10 до 20, ежедневно</span>
       <span class="mode__text-tel">8 812 450-25-25</span>
     </p>
   </div>
@@ -161,7 +163,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru" class="filter" method="GET">
-        <div class="filters__select-range-radio">
+
           <p class="filters__select">
             <label class="sorting-label" for="sorting">Сортировка:</label>
             <select class="sorting__list" name="sorting" id="sorting">
@@ -197,7 +199,7 @@
                 <label class="radio__label" for="radiofourth">Выше 30%</label>
               </li>
             </ul>
-          </div>
+
 
         </div>
         <div class="filters__checkboxes">
@@ -226,11 +228,10 @@
               </li>
             </ul>
           </div>
+        </div>
           <div class="filters__button">
             <button type="button" class=" button__form">Применить</button>
           </div>
-        </div>
-
       </form>
 
     </section>
@@ -473,7 +474,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="conteiner">
+    <div class="container">
       <ul class="social__list">
           <li class="social__item">
             <a href="#">

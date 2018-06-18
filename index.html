@@ -13,6 +13,7 @@
 
 <body class="body-main">
   <header class="main-header">
+  <div class="nav-wrap">
     <nav class="main-header__navigation">
       <a class="main-header__logo">
         <img src="img/svg/Logo.svg" alt="Gllacy Shop logo" class="main-header__image" height="67" width="157">
@@ -23,7 +24,7 @@
             <span class="catalog__title">Каталог</span>
           </a>
           <!--catalog-list popup-->
-          <ul class="header-catalog-list  visually-hidden">
+          <ul class="header-catalog-list">
             <li class="catalog-list__item">
               <a href="#" class="catalog__list-link list-link--new"> Новинки </a>
             </li>
@@ -49,6 +50,7 @@
           <a href="" class="info__list-item-link">О компании</a>
         </li>
       </ul>
+    </nav>
       <ul class="main-header__user-navigation user-navigation">
         <li class="user-navigation__item">
           <a href="#" class="button__search-link">
@@ -58,8 +60,8 @@
             </span>
           </a>
           <!-- Popup search -->
-          <form class="form-search visually-hidden" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="visually-hidden ">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="POST">
+            <label>
               <span class="visually-hidden form-search__img">Поиск</span>
               <input type="text" name="search" placeholder="Что ищем?">
             </label>
@@ -74,7 +76,7 @@
             </span>
           </a>
           <!--login-form popup-->
-          <form action="https://echo.htmlacademy.ru/" class="login-form visually-hidden" method="POST">
+          <form action="https://echo.htmlacademy.ru/" class="login-form" method="POST">
             <p>
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
@@ -100,7 +102,7 @@
             <span class="basket-text">Пусто</span>
           </a>
           <!--basket popup-->
-          <div class="basket-popup visually-hidden">
+          <div class="basket-popup">
             <table class="basket-popup__table">
               <tr class="basket-popup__string">
                 <td class="basket-popup__cell">
@@ -133,8 +135,8 @@
           <!--basket popup close-->
         </li>
       </ul>
+    </div>
 
-    </nav>
     <div class="mode__text-wrapper">
       <p class="main-header__mode-index mode__text">
         <span class="mode__text-graph">С 10 до 20, ежедневно</span>
@@ -314,9 +316,9 @@
 <section class="map">
   <h3 class="visually-hidden">Карта</h3>
 
-  <p class="map__image">
+  <div class="map__image">
     <img src="img/map.jpg" alt="Адрес Большая Конюшенная,19" width="1200" height="430">
-  </p>
+  </div>
 
   <!-- feedback-->
   <section class="feedback">
@@ -341,7 +343,7 @@
 </main>
 
 <footer class="main-footer">
-  <div class="conteiner">
+  <div class="container">
     <ul class="social__list">
       <li class="social__item">
         <a href="#">
