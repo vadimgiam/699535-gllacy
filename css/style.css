@@ -42,10 +42,16 @@ body {
   background-color: #ffffff;
   color: black;
   border-radius: 25px;
+  padding: 0;
+  padding: 10px 10px;
 }
 .item-link-catalog {
         background-color: rgb(208, 112, 88);
         border-radius: 5px;
+        padding: 0;
+        margin: 0;
+        padding: 10px 10px;
+        border-radius: 25px;
 }
 
 .main-header__info-list .info__list-item-link:active,
@@ -370,6 +376,7 @@ textarea:focus {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
+  padding: 15px 24px;
 }
 
 .button:hover {
@@ -392,7 +399,8 @@ textarea:focus {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   font-size: 32px;
   line-height: 44px;
-  width: 280px;
+  padding: 0;
+  padding: 20px 42px;
   text-align: center;
   vertical-align: middle;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -425,6 +433,7 @@ textarea:focus {
 /*Базовая стилизация main*/
 
 .index-columns .title2 {
+
   font-size: 35px;
   line-height: 41px;
 }
@@ -446,6 +455,10 @@ textarea:focus {
   width: 560px;
   height: 230px;
   border-radius: 17px;
+
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 20px
 }
 
 .chocolate {
@@ -520,6 +533,9 @@ textarea:focus {
   line-height: 30px;
   font-weight: 500;
   color: black;
+  padding: 0;
+  margin: 0;
+
 }
 
 .advantages__technology,
@@ -637,6 +653,8 @@ textarea:focus {
 
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs__item a {
@@ -659,10 +677,14 @@ textarea:focus {
   font-size: 14px;
   line-height: 16px;
   font-weight: 100;
+  align-self: center;
+
 }
 
 .breadcrumbs__item:after {
   content: "»";
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -695,8 +717,10 @@ textarea:focus {
 .filters__button .button__form {
   background-color: rgba(255, 255, 255, 0.188);
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  padding: 0;
+  padding: 11px 30px;
 }
 
 .filters__button .button__form:hover {
@@ -718,7 +742,10 @@ textarea:focus {
   border: none;
   background-color: #a9bab0;
   color: black;
-  border-radius: 5px;
+  border-radius: 25px;
+  padding: 0;
+  padding: 12px 0;
+  padding-left: 17px;
 }
 
 .filters__range-input {
@@ -805,16 +832,45 @@ color: white;
 .social__list {
   list-style: none;
 }
+.social__item-tw {
+  display: block;
+  background-image: url(../img/svg/twitter.svg);
+  width: 32px;
+height: 32px;
+opacity: 0.8;
+}
+.social__item-insta {
+  display: block;
+  background-image: url(../img/svg/insta.svg);
+  width: 32px;
+height: 32px;
+opacity: 0.8;
+}
+.social__item-fb {
+  display: block;
+  background-image: url(../img/svg/fb.svg);
+  width: 32px;
+height: 32px;
+opacity: 0.8;
+}
+.social__item-vk {
+  display: block;
+  background-image: url(../img/svg/vk.svg);
+  width: 32px;
+height: 32px;
+opacity: 0.8;
+}
+.social__item a:hover {
+  opacity: 1;
+}
+.social__item a {
+border: 2px solid #b8c6be;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+display: block;
+}
 
-.social__item path {
-  fill: #e6ebe9;
-}
-.social__item:hover path{
-fill:#ffffff;
-}
-.social__item:active path{
-  fill:#e6ebe9;
-  }
 .aboutus a {
   font-size: 13px;
   line-height: 18px;
@@ -1052,7 +1108,12 @@ advantages__delivery {
 .other-info {
   margin-bottom: 40px;
 }
-
+.container-map {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  margin:0 auto;
+}
 .map {
   position: relative;
   padding: 0;
@@ -1198,8 +1259,8 @@ justify-content: space-between;
 }
 .header-catalog-list{
   position: absolute;
-  left:-22px;
-  top:25px;
+  left:-5px;
+  top:35px;
   display: none;
 }
 .info__list-item:hover .header-catalog-list{
@@ -1237,7 +1298,7 @@ left:-180px;
   position: absolute;
   display: none;
   left:-440px;
-  top:25px;
+  top:20px;
 }
 .user-navigation__item:hover .basket-popup {
   display: block;
