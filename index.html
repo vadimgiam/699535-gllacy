@@ -29,7 +29,7 @@
               <a href="#" class="catalog__list-link list-link--new"> Новинки </a>
             </li>
             <li class="catalog-list__item">
-              <a href="catalog.html" class="catalog__list-link"> Сливочное </a>
+              <a href="catalog.html" class="catalog__list-link list-link--creamy"> Сливочное </a>
             </li>
             <li class="catalog-list__item">
               <a href="#" class="catalog__list-link"> Щербеты </a>
@@ -63,7 +63,7 @@
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="POST">
             <label>
               <span class="visually-hidden form-search__img">Поиск</span>
-              <input type="text" name="search" placeholder="Что ищем?">
+              <input class="form-search__input" type="text" name="search" placeholder="Что ищем?">
             </label>
           </form>
           <!-- Popup search close-->
@@ -77,23 +77,25 @@
           </a>
           <!--login-form popup-->
           <form action="https://echo.htmlacademy.ru/" class="login-form" method="POST">
-            <p>
+            <p class="login-form__email">
               <label class="login-form__label">
                 <input class="login-form__email" type="email" placeholder="Электронная почта">
               </label>
             </p>
-            <p>
+            <p class="login-form__pass">
               <label class="login-form__label">
                 <input class="login-form__password" type="password" placeholder="Пароль">
               </label>
             </p>
-            <p class="login-form__sub">
+            <div class="login-form__sub">
               <button type="submit" class="button button__login">
                 <span class="button__login-text">Войти</span>
               </button>
-              <a href="#" class="login-form__sub-link"> Забыли пароль?</a>
-              <a href="#" class="login-form__sub-link">Новая регистрация</a>
-            </p>
+              <div class="login-form__link-wrap">
+               <a href="#" class="login-form__sub-link"> Забыли пароль?</a>
+               <a href="#" class="login-form__sub-link">Новая регистрация</a>
+              </div>
+            </div>
           </form>
           <!--login-form popup close-->
         </li>
@@ -110,10 +112,10 @@
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
                 </td>
-                <td class="basket-popup__cell__img-orange"><a href="#"></a></td>
-                <td class="basket-popup__cell"><a href="#">Пломбир с апельсиновым джемом</a></td>
-                <td class="basket-popup__cell">1,5 кг х <span>200 руб.</span></td>
-                <td class="basket-popup__cell">300 руб.</td>
+                <td class="basket-popup__cell basket-popup__cell__img-orange"><a href="#"></a></td>
+                <td class="basket-popup__cell basket-popup__cell--name"><a href="#">Пломбир с апельсиновым джемом</a></td>
+                <td class="basket-popup__cell basket-popup__cell--weight">1,5 кг х <span>200 руб.</span></td>
+                <td class="basket-popup__cell basket-popup__cell--price">300 руб.</td>
               </tr>
               <tr class="basket-popup__string">
                 <td class="basket-popup__cell">
@@ -122,9 +124,9 @@
                   </a>
                 </td>
                 <td class="basket-popup__cell-img-strawberry"> <a href="#"></a> </td>
-                <td class="basket-popup__cell"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                <td class="basket-popup__cell">1,5 кг х <span>300 руб.</span> </td>
-                <td class="basket-popup__cell">450 руб.</td>
+                <td class="basket-popup__cell basket-popup__cell--name"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                <td class="basket-popup__cell basket-popup__cell--weight">1,5 кг х <span>300 руб.</span> </td>
+                <td class="basket-popup__cell basket-popup__cell--price">450 руб.</td>
               </tr>
               <tr class="basket-popup__string">
                 <td class="total-price">Итого:750 руб.</td>
@@ -163,7 +165,7 @@
       <p class="slider-title__chockolate visually-hidden">Шоколадный пломбир и лимонный сорбет </p>
       <p class="slider-title__strawberry visually-hidden">Пломбир с помадкой и клубничный щербет</p>
     </div>
-    <button type="button" class="button button__slider">Давайте оба!</button>
+    <button type="button" class="button__slider">Давайте оба!</button>
   </section>
 
   <main class="container">
@@ -197,7 +199,7 @@
           <p class="catalog-hits__price price">310₽
             <span class="price__measure">/кг</span>
           </p>
-          <p>
+          <p class="catalog-item__name">
             <a href="#" class="hits__text-link">
               Сливочное с апельсиновым
               джемом и цитрусовой стружкой
@@ -214,8 +216,8 @@
           <p class="catalog-hits__price price">380₽
             <span class="price__measure">/кг</span>
           </p>
-          <p>
-            <a href="#" class="hits__text__link">
+          <p class="catalog-item__name">
+            <a href="#" class="hits__text-link">
               Сливочно-кофейное с кусочками
               шоколада
             </a>
@@ -231,7 +233,7 @@
           <p class="catalog-hits__price price">355₽
             <span class="price__measure">/кг</span>
           </p>
-          <p>
+          <p class="catalog-item__name">
             <a href="#" class="hits__text-link">
               Сливочно-клубничное с
               присыпкой из белого шоколада
@@ -248,7 +250,7 @@
           <p class="catalog-hits__price price">415₽
             <span class="price__measure">/кг</span>
           </p>
-          <p>
+          <p class="catalog-item__name">
             <a href="#" class="hits__text-link">
               Сливочное крем-брюле с
               карамельной подливкой
@@ -308,7 +310,7 @@
           и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form action="https://echo.htmlacademy.ru/" class="subscription__form" method="POST">
-<input type="text" name="subscription" placeholder="Электронная почта">
+<input type="text" class="subscription__input" name="subscription" placeholder="Электронная почта">
 <button type="submit" class="button button__subscription">Отправить</button>
 </form>
 </section>
@@ -331,7 +333,7 @@
         ул. Большая Конюшенная 19/8, Санкт-Петербург
       </strong>
     </p>
-    <p class="feedback__tel"> Для заказов по телефону:
+    <p class="feedback__tel"> Для заказов по телефону: <br>
 
       <strong>8 812 450-25-25</strong>
     </p>
@@ -387,7 +389,7 @@
       </div>
     </div>
     <div class="produced">
-      <div>
+      <div class="aboutus__html">
         <img src="img/svg/logohtmla.svg" alt="htmlacademy" width="118" height="38">
       </div>
       <p>Сделано в
@@ -396,21 +398,24 @@
   </div>
 </footer>
 <!--popup-feedback-->
-<section class="popup-feedback visually-hidden">
-  <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
-  <p>
-    <label for="feedbackname" class="visually-hidden">имя</label>
-    <input type="text" class="feedback-name" name="name" id="feedbackname" placeholder="Как вас зовут?">
-    <label for="feedbackemale" class="visually-hidden">почта</label>
-    <input type="text" class="feedback-email" name="name" id="feedbackemale" placeholder="Ваша почта для ответа?">
-  </p>
-  <p>
-    <label for="feedbacktext" class="visually-hidden">Поле для отзыва</label>
-    <textarea class="feedback-text" name="feedbacktext" id="feedbacktext" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
-  </p>
+<section class="popup-feedback">
+  <div class="popup-feedback__wrap">
+      <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+      <p class="popup-feedback__input">
+        <label for="feedbackname" class="visually-hidden">имя</label>
+        <input type="text" class="feedback-name" name="name" id="feedbackname" placeholder="Как вас зовут?">
+        <label for="feedbackemale" class="visually-hidden">почта</label>
+        <input type="text" class="feedback-email" name="name" id="feedbackemale" placeholder="Ваша почта для ответа?">
+      </p>
+      <p class="popup-feedback__textarea">
+        <label for="feedbacktext" class="visually-hidden">Поле для отзыва</label>
+        <textarea class="feedback-text"  name="feedbacktext" id="feedbacktext" placeholder="Напишите что-нибудь"></textarea>
+      </p>
 
-  <button type="submit" class="button button__feedback-popup">Отправить</button>
-  <button class="button button__close">Закрыть</button>
+      <button type="submit" class="button button__feedback-popup">Отправить</button>
+      <button class="button__close">Закрыть</button>
+  </div>
+
 </section>
 <!--popup-feedback close-->
 </body>
