@@ -37,7 +37,13 @@ body {
 .main-header__user-navigation a {
   color: #ffffff;
 }
-
+.info__list-item-link {
+  padding: 0;
+  padding: 6px 13px;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+}
 .main-header__info-list .info__list-item-link:hover {
   background-color: #ffffff;
   color: black;
@@ -64,6 +70,7 @@ body {
    background-color: rgba(248, 247, 244, 0.988);
    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
    text-decoration-color: transparent;
+   color: black;
 }
 
 .header-catalog-list {
@@ -168,7 +175,7 @@ body {
   background-color: #f8f7f4;
   max-width: 278px;
   border-radius: 5px;
-
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .login-form__sub {
   display: flex;
@@ -267,6 +274,8 @@ fill: black;
   width: 92px;
   border-radius: 25px;
   background-color:rgba(255, 255, 255, 0.2);
+  padding: 0;
+  padding: 10px;
 }
 .login-text:hover {
   background-color: white;
@@ -335,6 +344,7 @@ background-color: white;
 
 .form-search {
   background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   width: 340px;
   height: 84px;
   border-radius: 5px;
@@ -377,6 +387,8 @@ textarea:focus {
 
 .basket-popup {
   background-color: #f8f7f4;
+
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   max-width: 540px;
   color: black;
@@ -661,6 +673,7 @@ text-decoration: none;
   background-color: #9bafa3;
   width: 292px;
   border-radius: 5px;
+  background-position: 50% 50%;
 }
 
 .advantages {
@@ -1002,19 +1015,25 @@ padding-left: 20px;
    color: rgba(0, 0, 0, 0.1);
 }
 
-.pagination-item-current a{
-    color: black;
-    text-align: center;
 
-    background-color: white;
+.pagination-item a {
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
     width: 26px;
     height: 26px;
     border-radius: 50%;
     display: block;
 }
-.pagination-item a {
+.pagination-item.pagination-item-current a{
+  color: black;
   text-align: center;
-  vertical-align: middle;
+
+  background-color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+display: block;
 }
 .pagination-item a:hover {
     color: white;
