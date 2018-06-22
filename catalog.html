@@ -189,36 +189,54 @@
           <p class="filters__select">
             <label class="sorting-label" for="sorting">Сортировка:</label>
             <select class="sorting__list" name="sorting" id="sorting">
-              <option value="sortingpopular">По популярности</option>
-              <option value="sortinglow">Сначала дешевые</option>
-              <option value="sortinghigh">Сначала дорогие</option>
-              <option value="sortingabc">По алфавиту</option>
-            </select>
-          </p>
+<option value="sortingpopular">по популярности</option>
+<option value="sortinglow">Сначала недорогие</option>
+<option value="sortinghigh">Сначала дорогие</option>
+<option value="sortingabc">По жирности</option>
+</select>
+</p>
 
-          <p class="filters__range">
-            <label class="filters__range-label" for="range">Цена: 100 руб. – 500 руб.</label>
+<div class="filters__range">
+  <div class="filters__range-title">Цена: 100 руб. – 500 руб.</div>
+<div class="range-wrap">
+    <div class="range-controls">
+        <div class="scale">
+          <div class="bar1"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+</div>
 
-            <input class="filters__range-input" name="range" id="range" type="range" min="100" max="500" step="50">
-          </p>
-          <div class="fat-radio fat">
-            <h2 class="fat-title">Жирность:</h2>
-            <ul class="fat-radio__list">
-              <li class="fat-item">
-                <input type="radio" id="radiofirst" name="radio1" class="radio__input">
-                <label class="radio__label" for="radiofirst">0%</label>
+</div>
+
+<div class="fat-radio fat">
+  <h2 class="fat-title">Жирность:</h2>
+  <ul class="fat-radio__list">
+    <li class="fat-item">
+                  <label class="radio__label" for="radiofirst">
+                <input type="radio" id="radiofirst" name="radio" class="radio__input">
+                <span class="radio-indicator"></span>
+                0%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiosecond" name="radio2" class="radio__input" checked>
-                <label class="radio__label" for="radiosecond">до 10%</label>
+                <label class="radio__label" for="radiosecond">
+                <input type="radio" id="radiosecond" name="radio" class="radio__input" checked>
+                <span class="radio-indicator"></span>
+                до 10%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiothird" name="radio3" class="radio__input">
-                <label class="radio__label" for="radiothird">до 30%</label>
+                  <label class="radio__label" for="radiothird">
+                <input type="radio" id="radiothird" name="radio" class="radio__input">
+                <span class="radio-indicator"></span>
+                до 30%</label>
               </li>
               <li class="fat-item">
-                <input type="radio" id="radiofourth" name="radio4" class="radio__input">
-                <label class="radio__label" for="radiofourth">Выше 30%</label>
+                  <label class="radio__label" for="radiofourth">
+                <input type="radio" id="radiofourth" name="radio" class="radio__input">
+                <span class="radio-indicator"></span>
+                Выше 30%</label>
               </li>
             </ul>
 
@@ -229,24 +247,34 @@
             <h2 class="fillers-title">Наполнители:</h2>
             <ul class="fillers-checkbox__list">
               <li class="fillers-item">
+                <label class="checkbox__label" for="checkbox1">
                 <input type="checkbox" id="checkbox1" name="checkbox1" class="checkbox__input" checked>
-                <label class="checkbox__label" for="checkbox1">Шоколадные</label>
+                <span class="checkbox-indicator"></span>
+                шоколадные</label>
               </li>
               <li class="fillers-item">
+                  <label class="checkbox__label" for="checkbox2">
                 <input type="checkbox" id="checkbox2" name="checkbox2" class="checkbox__input" checked>
-                <label class="checkbox__label" for="checkbox2">Сахарные присыпки</label>
+                <span class="checkbox-indicator"></span>
+                сахарные присыпки</label>
               </li>
               <li class="fillers-item">
+                <label class="checkbox__label" for="checkbox3">
                 <input type="checkbox" id="checkbox3" name="checkbox3" class="checkbox__input">
-                <label class="checkbox__label" for="checkbox3">Фрукты</label>
+                <span class="checkbox-indicator"></span>
+                  фрукты</label>
               </li>
               <li class="fillers-item">
+                  <label class="checkbox__label" for="checkbox4">
                 <input type="checkbox" id="checkbox4" name="checkbox4" class="checkbox__input">
-                <label class="checkbox__label" for="checkbox4">Сиропы</label>
+                <span class="checkbox-indicator"></span>
+                сиропы</label>
               </li>
               <li class="fillers-item">
+                  <label class="checkbox__label" for="checkbox5">
                 <input type="checkbox" id="checkbox5" name="checkbox5" class="checkbox__input">
-                <label class="checkbox__label" for="checkbox5">Джемы</label>
+                <span class="checkbox-indicator"></span>
+                джемы</label>
               </li>
             </ul>
           </div>

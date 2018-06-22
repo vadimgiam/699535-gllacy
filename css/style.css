@@ -913,10 +913,7 @@ padding-left: 20px;
 .breadcrumbs__item--current {
   color: white;
   font-size: 14px;
-  line-height: 16px;
   font-weight: 100;
-  align-self: center;
-
 }
 
 .breadcrumbs__item:after {
@@ -928,19 +925,35 @@ padding-left: 20px;
 .breadcrumbs__item:last-child::after {
   display: none;
 }
-
+.breadcrumbs__item {
+  margin-left: -2px;
+}
 /*Базовая стилизация фильтров*/
 
 .sorting-label,
-.filters__range-label,
+.filters__range-title,
 .fat-title,
 .fillers-title,
 .button__form {
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 100;
+  color: white;
 }
 
+.sorting-label {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+..filters__range-title {
+  margin: 0;
+  padding: 0;
+  margin-left: 4px;
+  margin-bottom: 24px;
+}
 .filters ul {
   list-style: none;
 }
@@ -954,11 +967,11 @@ padding-left: 20px;
 
 .filters__button .button__form {
   background-color: rgba(255, 255, 255, 0.188);
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 25px;
   cursor: pointer;
   padding: 0;
-  padding: 11px 30px;
+  padding: 10px 34px;
 }
 
 .filters__button .button__form:hover {
@@ -979,10 +992,14 @@ padding-left: 20px;
 .sorting__list {
   border: none;
   background-color: #a9bab0;
-  color: black;
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 100;
+  font: inherit;
   border-radius: 25px;
   padding: 0;
-  padding: 12px 0;
+  padding: 9px 8px;
   padding-left: 17px;
 }
 
@@ -997,13 +1014,167 @@ padding-left: 20px;
 .fat-radio__list {
   background-color: #a9bab0;
   border-radius: 5px;
+
+}
+.fat-item {
+  margin: 0;
+  padding: 0;
+  margin-right: 9px;
+}
+/*Декорирование радиобаттонов*/
+.fat-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+.fat-item input[type="radio"] {
+  display:none;
+}
+.radio__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 38px;
 }
 
+.radio__label input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.8);
+}
+.radio__label input[type="radio"]:focus + .radio-indicator,
+.radio__label input[type="radio"]:hover + .radio-indicator{
+  border-color: rgba(255,255,255,1);
+}
+.radio__label input[type="radio"]:checked + .radio-indicator::before,
+.radio__label input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+}
+.radio__label:hover,
+.radio__label:focus {
+  border-color: rgba(255,255,255,1);
+  }
+/*Декорирование радиобаттонов close*/
+/*Декорирование чекбоксов*/
+.fillers-item input[type="checkbox"] {
+  display:none;
+}
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+}
+.checkbox__label input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 2px solid rgba(255,255,255,0.8);
+}
+.checkbox__label input[type="checkbox"]:focus + .checkbox-indicator,
+.checkbox__label input[type="checkbox"]:hover + .checkbox-indicator{
+  border-color: rgba(255,255,255,1);
+}
+.checkbox__label input[type="checkbox"]:checked + .checkbox-indicator::before,
+.checkbox__label input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: -5px;
+  left: -3px;
+  width: 23px;
+  height: 20px;
+  background-image: url(../img/svg/checkbox-onn.svg);
+
+}
+.fillers-item {
+  margin: 0;
+  margin-right: 17px;
+}
+.fillers-title {
+  margin: 0;
+  padding: 0;
+  margin-left: 22px;
+  margin-bottom: 6px;
+}
+.filters__checkboxes {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+/*Декорирование чекбоксов close*/
 .fillers-checkbox__list {
   background-color: #a9bab0;
   border-radius: 5px;
 }
+/*Декорирование ползунков*/
+.filters__range-title {
+  margin-bottom: 23px;
+}
 
+.range-controls {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
+  max-width: 218px;
+  background-color: black;
+  border-radius: 50%;
+
+}
+.range-controls .scale {
+  position: absolute;
+  left: -3px;
+  height: 4px;
+  width: 176px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.range-controls .bar1 {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.range-controls .bar {
+  position: absolute;
+  left: 38px;
+  height: 4px;
+  width: 55%;
+  background: rgba(255, 255, 255, 1);
+}
+.range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 4px;
+  height: 4px;
+  background: #b4b4b4;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-toggle:hover {
+  transform: scale(1.1);
+}
+.range-toggle-min {
+left: 16px;
+}
+.range-toggle-max {
+left: 113px;
+}
+/*Декорирование ползунков close*/
 /*Базовая стилизация фильтров close*/
 
 .catalog__item:hover {
@@ -1503,6 +1674,7 @@ advantages__delivery {
   margin: 0;
   padding: 0;
   width: 220px;
+  margin-left: 29px;
 }
 
 .fat-radio__list{
@@ -1510,23 +1682,26 @@ advantages__delivery {
   padding: 0;
   display: flex;
   width: 415px;
-  justify-content: space-between;
-  align-self: flex-start;
+  padding: 8px 12px;
+  padding-right: 0px;
+  border-radius: 20px;
 }
 
 .fillers-checkbox__list {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  width: 704px;
-  justify-content: space-between;
+  max-width: 704px;
+  padding: 8px 0px;
+  padding-left: 21px;
+  padding-right: 0px;
+  border-radius: 18px;
 }
 .filters__button {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  margin-left: 15px;
+  margin-left: 26px;
 }
 
 .filters {
