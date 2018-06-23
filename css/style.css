@@ -78,6 +78,7 @@ body {
   width: 142px;
   border-radius: 5px;
   padding-left: 0;
+  z-index: 2;
 }
 
 .catalog-list__item .catalog__list-link {
@@ -165,16 +166,23 @@ body {
   border-radius: 5px;
 }
 */
+.user-navigation__basket {
+  margin-left: -31px;
+}
+.user-navigation__login {
+  margin-left: 13px;
+}
 .user-navigation__item .basket-full {
     background-color: #f8f7f4;
     color: black;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 .login-form {
   background-color: #f8f7f4;
   max-width: 278px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 .login-form__sub {
   display: flex;
@@ -243,6 +251,8 @@ body {
   background-color:rgba(255, 255, 255, 0.2);
   border-radius:50%;
   text-align:center;
+  box-sizing: border-box;
+  padding-top: 5px;
 }
 .button__search-svg:hover {
   background-color:white;
@@ -268,26 +278,41 @@ fill: black;
     background-image: url(../img/inblack.png);
 }
 */
-.login-text {
+.button__login {
   display: block;
   width: 92px;
   border-radius: 25px;
   background-color:rgba(255, 255, 255, 0.2);
   padding: 0;
-  padding: 10px;
+  text-decoration: none;
+  margin-right: 40px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  margin-left: -4px;
+  margin-top: 2px;
 }
-.login-text:hover {
+.button__login:hover {
   background-color: white;
 color: black;
 }
-.login-text path {
+.button__login path {
   fill: white;
 }
-.login-text:hover path {
+.button__login:hover path {
   fill:black;
 }
+.login-text {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 43px;
+}
 
-.button__basket {
+.login__svg {
+  margin-right: -40px;
+  margin-left: 17px;
+}
+    .button__basket {
   background-color: rgba(255, 255, 255, 0.2);
 
 }
@@ -327,16 +352,20 @@ background-color: white;
     width: 24px;
     height:24px;
     position: absolute;
-    left: -30px;
+    left: 16px;
     top: -5px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: white;
 }
 .basket-full {
   background-color: white;
   border-radius: 25px;
+  padding-left: 43px;
+    padding-right: 18px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    border-radius: 25px;
 }
 
 /*Базовая стилизация полей ввода*/
@@ -354,10 +383,11 @@ input[type="email"],
 input[type="password"],
 textarea {
   min-height: 42px;
-  border: solid 1px;
-  border-color: #eeeeec;
+
+  border: none;
   border-radius: 5px;
  /* padding: 15px auto 12px 15px;*/
+ box-shadow: inset 0 0 0 1px rgba(178, 178, 178,0.52);
  padding-left: 13px;
 }
 
@@ -366,9 +396,9 @@ input[type="email"]:hover,
 input[type="password"]:hover,
 textarea:hover {
   outline: none;
+  border: none;
+  box-shadow: inset 0 0 0 2px rgba(154, 154, 154,0.52);
 
-  border: solid 2px;
-  border-color: #eeeeec;
 }
 
 input[type="text"]:focus,
@@ -378,6 +408,9 @@ textarea:focus {
   outline: none;
   border: solid 2px;
   border-color: #b4d3f2;
+  border: none;
+  box-shadow: inset 0 0 0 2px rgba(46, 136, 228,0.52);
+
 }
 
 /*Базовая стилизация полей ввода close*/
@@ -1212,6 +1245,9 @@ left: 113px;
     height: 26px;
     border-radius: 50%;
     display: block;
+    margin-top: -5px;
+    box-sizing: border-box;
+    padding-top: 4px;
 }
 .pagination-item.pagination-item-current a{
   color: black;
@@ -1222,6 +1258,9 @@ left: 113px;
   height: 26px;
   border-radius: 50%;
 display: block;
+margin-top: -5px;
+    box-sizing: border-box;
+    padding-top: 2px;
 }
 .pagination-item a:hover {
     color: white;
@@ -1296,6 +1335,7 @@ display: block;
   line-height: 18px;
   font-weight: 100;
   color: white;
+  display: block;
 }
 
 .produced a,
@@ -1319,6 +1359,9 @@ display: block;
   position: relative;
   margin-left: 22px;
   margin-top: 2px;
+}
+.aboutus__heart {
+  margin-bottom: 4px;
 }
 .aboutus__heart::before {
   content: "";
@@ -1710,7 +1753,7 @@ advantages__delivery {
 .catalog {
   margin: 0;
   padding: 0;
-  margin-bottom: 44px;
+  margin-bottom: 49px;
 }
 .catalog__list {
   margin: 0;
@@ -1739,7 +1782,7 @@ margin-bottom: 22px;
 .pagination {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 /*Сетки main close*/
 
@@ -1782,9 +1825,13 @@ justify-content: space-between;
   margin-top: -23px;
 }
 .aboutus-documents {
-  margin-left: 12px;
+  margin-left: 32px;
   margin-top: 4px;
 }
+.aboutus-documents a {
+  margin-bottom: 2px;
+}
+
 .produced {
   margin-left: 225px;
 }
