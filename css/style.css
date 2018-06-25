@@ -191,8 +191,8 @@ body {
 .login-form__link-wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 21px;
-  margin-top: -3px;
+  margin-left: -20px;
+  margin-top: -1px;
 }
 
 .login-form .login-form__sub-link {
@@ -286,7 +286,7 @@ fill: black;
   padding: 0;
   text-decoration: none;
   margin-right: 40px;
-  padding-top: 4px;
+  padding-top: 7px;
   padding-bottom: 5px;
   padding-left: 0px;
   margin-left: -4px;
@@ -306,25 +306,40 @@ color: black;
   vertical-align: top;
   display: inline-block;
   margin-left: 43px;
+  margin-top: 2px;
 }
-
+.button__login-text {
+  display: block;
+  margin-left: -24px;
+}
 .login__svg {
   margin-right: -40px;
   margin-left: 17px;
 }
     .button__basket {
   background-color: rgba(255, 255, 255, 0.2);
-
+  border-radius: 25px;
+  padding-left: 43px;
+    padding-right: 18px;
+    padding-top: 7px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+}
+.button__basket:hover {
+  color: black;
+  background-color: white;
 }
 .basket-text {
   display: block;
   width: 99px;
-  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: -63px;
   border-radius: 25px;
 }
 .basket-text:hover {
 color: black;
-background-color: white;
+
 }
 .basket-text::before {
     content: "";
@@ -332,18 +347,20 @@ background-color: white;
     width: 24px;
     height:24px;
     position: absolute;
-    left: -30px;
-    top: -5px;
+    left: 13px;
+    top: 4px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
-.basket-text:hover::before {
+}
+.user-navigation__item.user-navigation__item-index {
+  margin-left: -33px;
+}
+.button__basket:hover .basket-text::before {
     content: "";
     background-image: url(../img/svg/busketred.svg);
-    background-color: white;
+
 
 }
 .basket-text__full::before {
@@ -451,7 +468,9 @@ padding: 0;
 .basket-popup__cell span {
   color: #8ba596;
 }
-
+.basket-popup__cell__img-orange {
+  padding-left: 2px;
+}
 .basket-popup__cell__img-orange  a{
   background-image: url(../img/orangemini.png);
   background-repeat: no-repeat;
@@ -573,7 +592,7 @@ display: block;
   outline: none;
 }
 button.button__login {
-  padding: 11px 24px;
+  padding: 10px 52px;
   margin-bottom: 21px;
 }
 .button__basket-order {
@@ -615,7 +634,7 @@ button.button__login {
   line-height: 41px;
   margin: 0;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 }
 
 .index-columns p {
@@ -978,7 +997,7 @@ padding-left: 20px;
 .sorting-label {
   margin: 0;
   padding: 0;
-  margin-left: 20px;
+  margin-left: 17px;
   margin-bottom: 0px;
 }
 ..filters__range-title {
@@ -1033,7 +1052,7 @@ padding-left: 20px;
   border-radius: 25px;
   padding: 0;
   padding: 9px 8px;
-  padding-left: 17px;
+  padding-left: 12px;
 }
 
 .filters__range-input {
@@ -1140,7 +1159,7 @@ padding-left: 20px;
 .fillers-title {
   margin: 0;
   padding: 0;
-  margin-left: 22px;
+  margin-left: 16px;
   margin-bottom: 6px;
 }
 .filters__checkboxes {
@@ -1504,10 +1523,16 @@ justify-content: flex-start;
           justify-content: space-between;
 
 }
+.info__list-item--catalog.info__list-item--catalog-page {
+  margin-left: -12px;
+}
+.info__list-item--catalog {
+  margin-left: -12px;
+}
 .main-header__user-navigation {
   margin: 0;
   padding: 0;
-  padding-top:20px;
+  padding-top:15px;
   min-width: 246px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1558,7 +1583,7 @@ justify-content: flex-start;
   display: flex;
 
   margin-right: auto;
- margin-top: 25px;
+ margin-top: 27px;
 }
 .main-header__mode.mode__text {
 margin-top: 5px;
@@ -1736,7 +1761,7 @@ advantages__delivery {
   display: flex;
   max-width: 704px;
   padding: 8px 0px;
-  padding-left: 21px;
+  padding-left: 14px;
   padding-right: 0px;
   border-radius: 18px;
 }
@@ -1744,7 +1769,7 @@ advantages__delivery {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  margin-left: 26px;
+  margin-left: 24px;
 }
 
 .filters {
@@ -1753,7 +1778,7 @@ advantages__delivery {
 .catalog {
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 55px;
 }
 .catalog__list {
   margin: 0;
@@ -1782,7 +1807,7 @@ margin-bottom: 22px;
 .pagination {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 /*Сетки main close*/
 
@@ -1870,7 +1895,7 @@ justify-content: space-between;
   position: absolute;
   left:-305px;
   top:35px;
-  display: none;
+  display:none;
   box-sizing: border-box;
   padding:0;
   padding: 20px 15px;
@@ -1883,9 +1908,9 @@ justify-content: space-between;
 }
 .login-form {
   position: absolute;
-display:none;
-left:-180px;
-  top:25px;
+display: none;
+left:-186px;
+  top:43px;
   padding: 0;
   padding-left: 21px;
   padding-top: 4px;
@@ -1900,7 +1925,7 @@ left:-180px;
   font-weight: 400;
 }
 .login-form__email {
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 .login-form__pass {
   margin-bottom: 20px;
@@ -1917,7 +1942,8 @@ left:-180px;
   position: absolute;
   display: none;
   left:-440px;
-  top:20px;
+  top:39px;
+  max-width: 540px;
 }
 .user-navigation__item:hover .basket-popup {
   display: block;
