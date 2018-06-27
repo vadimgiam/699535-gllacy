@@ -116,7 +116,7 @@
           <div class="basket-popup">
             <table class="basket-popup__table">
               <tr class="basket-popup__string">
-                <td class="basket-popup__cell">
+                <td class="basket-popup__cell basket-popup__cell-del">
                   <a href="#" class="basket__del">
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
@@ -125,15 +125,15 @@
                   <a href="#"></a>
                 </td>
                 <td class="basket-popup__cell basket-popup__cell--name">
-                  <a href="#">Пломбир с апельсиновым джемом</a>
+                  <a class="cell-name-link" href="#">Пломбир с апельсиновым джемом</a>
                 </td>
                 <td class="basket-popup__cell basket-popup__cell--weight">1,5 кг х
                   <span>200 руб.</span>
                 </td>
                 <td class="basket-popup__cell basket-popup__cell--price">300 руб.</td>
               </tr>
-              <tr class="basket-popup__string">
-                <td class="basket-popup__cell">
+              <tr class="basket-popup__string string-second">
+                <td class="basket-popup__cell basket-popup__cell-del">
                   <a href="#" class="basket__del">
                     <img src="img/svg/del.svg" alt="delete" height="11" width="11">
                   </a>
@@ -141,18 +141,16 @@
                 <td class="basket-popup__cell-img-strawberry">
                   <a href="#"></a>
                 </td>
-                <td class="basket-popup__cell basket-popup__cell--name">
-                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                <td class="basket-popup__cell basket-popup__cell--name basket-popup__cell--name2">
+                  <a class="cell-name-link" href="#"> Клубничный пломбир с присыпкой из белого шоколада </a>
                 </td>
                 <td class="basket-popup__cell basket-popup__cell--weight">1,5 кг х
                   <span>300 руб.</span>
                 </td>
                 <td class="basket-popup__cell basket-popup__cell--price">450 руб.</td>
               </tr>
-              <tr class="basket-popup__string">
-                <td class="total-price">Итого:750 руб.</td>
-              </tr>
             </table>
+            <div class="total-price">Итого:750 руб.</div>
             <button class="button button__basket-order">Оформить заказ</button>
           </div>
           <!--basket popup close-->
@@ -281,7 +279,7 @@
           </div>
         </div>
           <div class="filters__button">
-            <button type="button" class=" button__form">Применить</button>
+            <button type="button" class=" button__form" value="отправить">Применить</button>
           </div>
       </form>
 
@@ -607,7 +605,7 @@
         <img src="img/svg/logohtmla.svg" alt="htmlacademy" width="110" height="38">
       </div>
       <p class="produced__link-catalog">Сделано в
-        <a href="htmlacademy.ru">HTML Academy </a> © 2017</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a> © 2017</p>
     </div>
   </div>
   </footer>
