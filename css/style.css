@@ -176,7 +176,7 @@ body {
 }
 .user-navigation__login {
   margin-left: 13px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 .user-navigation__item .basket-full {
     background-color: #f8f7f4;
@@ -328,8 +328,8 @@ color: black;
   border-radius: 25px;
   padding-left: 43px;
     padding-right: 18px;
-    padding-top: 11px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     border-radius: 25px;
     display: block;
     text-decoration: none;
@@ -660,7 +660,17 @@ button.button__login:hover {
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
+  /*position: absolute;
+  left: 267px;
+  top: 220px;*/
+  max-width: 670px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 214px;
+  padding-left: 237px;
 }
+
 
 /*Слайдер close*/
 
@@ -758,6 +768,7 @@ text-decoration: none;
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
+  margin-left: -7px;
 }
 
 .catalog-hits__item,
@@ -776,7 +787,7 @@ text-decoration: none;
   width: 61px;
   height: 61px;
   top: 0;
-  left: 3px;
+  left: 1px;
   z-index: 2;
 }
 .catalog-bg {
@@ -1045,8 +1056,8 @@ padding-left: 20px;
 
 .breadcrumbs__item:after {
   content: "»";
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 4px;
+  margin-left: 9px;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -1153,6 +1164,57 @@ padding-left: 20px;
   padding: 0;
   margin-right: 9px;
 }
+.fat-itemfirst {
+  margin-left: -2px;
+}
+.fat-itemsecond {
+  margin-left: 3px;
+}
+.fat-itemthird {
+  margin-left: 2px;
+}
+.fat-itemfourth {
+  margin-left: 3px;
+}
+
+/*Декорирование кнопок слайдера*/
+
+.slider__label {
+  position: relative;
+  cursor: pointer;
+}
+.slider__label input[type="radio"] + .slider-indicator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,1);
+}
+.slider__label input[type="radio"]:checked + .slider-indicator::before {
+  content: "";
+  position: absolute;
+  top: center;
+  left: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,1);
+}
+.slider__label input[type="radio"]:hover + .slider-indicator {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.slider__radio {
+  position: absolute;
+  top: 428px;
+  left: -15px;
+}
+
+
+
+/*Декорирование кнопок слайдера close*/
 /*Декорирование радиобаттонов*/
 .fat-title {
   padding: 0;
@@ -1235,6 +1297,12 @@ padding-left: 20px;
 .fillers-item {
   margin: 0;
   margin-right: 17px;
+}
+.fillers-itemfirst {
+  margin-left: 5px;
+}
+.fillers-itemsecond {
+  margin-left: 2px;
 }
 .fillers-title {
   margin: 0;
@@ -1326,12 +1394,6 @@ left: 128px;
     color: white;
 
 }
-
-.pagination-item.pagination-item-back a{
-   color: rgba(0, 0, 0, 0.1);
-}
-
-
 .pagination-item a {
   text-align: center;
   vertical-align: middle;
@@ -1343,6 +1405,7 @@ left: 128px;
     margin-top: -5px;
     box-sizing: border-box;
     padding-top: 4px;
+    color: white;
 }
 .pagination-item.pagination-item-current a{
   color: black;
@@ -1355,7 +1418,7 @@ left: 128px;
 display: block;
 margin-top: -5px;
     box-sizing: border-box;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 .pagination-item a:hover {
     color: white;
@@ -1377,6 +1440,27 @@ color: white;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+}
+.pagination__back-link {
+  background-image: url("../img/back.png");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  background-position: 2px 7px;
+}
+.pagination__forw-link {
+  background-image: url("../img/forw.png");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  background-position: 15px 7px;
+}
+.pagination-item-back .pagination__back-link:hover {
+background-color: transparent;
+cursor:default;
+}
+.another-page .pagination__forw-link:hover {
+  background-color: transparent;
 }
 /*Pagination close*/
 /*Базовая стилизация main close*/
@@ -1564,7 +1648,7 @@ button.button__close {
   min-height: 115px;
 }
 .catalog-header {
-  margin-bottom: -10px;
+  margin-bottom: -14px;
 }
 .nav-wrap {
   width: 1146px;
@@ -1668,6 +1752,7 @@ flex-direction: column;
 }
 .mode__text-graph {
   align-self: flex-end;
+  margin-bottom: 4px;
 }
 /*Хедер сетки close*/
 .slider {
@@ -1680,8 +1765,15 @@ flex-direction: column;
 }
 .button__slider {
   margin: 0;
-  margin-top: 429px;
+  margin-top: -30px;
   margin-left: 436px;
+}
+.slider__button-list {
+  list-style: none;
+  display: flex;
+}
+.slider__button-item {
+  margin-right: 30px;
 
 }
  /*Сетки main*/
@@ -1698,7 +1790,7 @@ flex-direction: column;
 .slider__bg {
   position: absolute;
   background-image: url(../img/Cremebrulee.png);
-  top: -23%;
+  top: -25%;
   left: 7%;
   width: 1045px;
   height: 881px;
@@ -1737,7 +1829,7 @@ justify-content: space-between;
 .catalog-hits {
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 .catalog-hits__item,
 .catalog__item {
@@ -1750,6 +1842,16 @@ justify-content: space-between;
 .catalog-item__name {
   margin-top: 7px;
   text-align: center;
+}
+.catalog-item__name--cowberry {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.catalog-item__name--vanilla {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 180px;
 }
 .advantages {
   margin: 0;
@@ -1833,7 +1935,7 @@ advantages__delivery {
   display: flex;
   max-width: 415px;
   padding: 8px 12px;
-  padding-right: 12px;
+  padding-right: 9px;
   border-radius: 20px;
 }
 
@@ -1844,14 +1946,14 @@ advantages__delivery {
   max-width: 704px;
   padding: 8px 0px;
   padding-left: 14px;
-  padding-right: 0px;
+  padding-right: 3px;
   border-radius: 18px;
 }
 .filters__button {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  margin-left: 24px;
+  margin-left: 14px;
 }
 
 .filters {
@@ -1885,6 +1987,7 @@ margin-bottom: 22px;
 .pagination-item {
   margin: 0;
   padding: 0;
+  margin-right: 2px;
 }
 .pagination {
   margin: 0;
@@ -1926,11 +2029,25 @@ justify-content: space-between;
   margin-left: 214px;
   margin-top: 9px;
   display: flex;
-  /*justify-content: space-between;*/
 }
+  .produced__link-catalog {
+    margin-top: 0;
+  }
+  /*justify-content: space-between;*/
+
+
+  .social__list.social__list-catalog {
+    margin-top: -9px;
+  }
+
 .container__catalog .aboutus  {
   margin-top: -23px;
 }
+
+.aboutus.aboutus-catalog {
+  margin-top: -3px;
+}
+
 .aboutus-documents {
   margin-left: 32px;
   margin-top: 4px;
@@ -1954,6 +2071,9 @@ justify-content: space-between;
 /*Выпадающие окна в хэдере*/
 .info__list-item {
   position: relative;
+}
+.info__list__item:last-child {
+  margin-left: 4px;
 }
 .header-catalog-list{
   position: absolute;
@@ -2021,7 +2141,7 @@ left:-186px;
   position: relative;
 }
 .user-navigation__search {
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 }
 
 .basket-popup {

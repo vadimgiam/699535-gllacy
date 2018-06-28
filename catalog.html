@@ -213,25 +213,25 @@
 <div class="fat-radio fat">
   <h2 class="fat-title">Жирность:</h2>
   <ul class="fat-radio__list">
-    <li class="fat-item">
+    <li class="fat-item fat-itemfirst">
                   <label class="radio__label" for="radiofirst">
                 <input type="radio" id="radiofirst" name="radio" class="radio__input">
                 <span class="radio-indicator"></span>
                 0%</label>
               </li>
-              <li class="fat-item">
+              <li class="fat-item fat-itemsecond">
                 <label class="radio__label" for="radiosecond">
                 <input type="radio" id="radiosecond" name="radio" class="radio__input" checked>
                 <span class="radio-indicator"></span>
                 до 10%</label>
               </li>
-              <li class="fat-item">
+              <li class="fat-item fat-itemthird">
                   <label class="radio__label" for="radiothird">
                 <input type="radio" id="radiothird" name="radio" class="radio__input">
                 <span class="radio-indicator"></span>
                 до 30%</label>
               </li>
-              <li class="fat-item">
+              <li class="fat-item fat-itemfourth">
                   <label class="radio__label" for="radiofourth">
                 <input type="radio" id="radiofourth" name="radio" class="radio__input">
                 <span class="radio-indicator"></span>
@@ -263,13 +263,13 @@
                 <span class="checkbox-indicator"></span>
                   фрукты</label>
               </li>
-              <li class="fillers-item">
+              <li class="fillers-item fillers-itemfirst">
                   <label class="checkbox__label" for="checkbox4">
                 <input type="checkbox" id="checkbox4" name="checkbox4" class="checkbox__input">
                 <span class="checkbox-indicator"></span>
                 сиропы</label>
               </li>
-              <li class="fillers-item">
+              <li class="fillers-item fillers-itemsecond">
                   <label class="checkbox__label" for="checkbox5">
                 <input type="checkbox" id="checkbox5" name="checkbox5" class="checkbox__input">
                 <span class="checkbox-indicator"></span>
@@ -377,7 +377,7 @@
           <p class="catalog__price price">325₽
             <span class="price__measure">/кг</span>
           </p>
-          <p class="catalog-item__name">
+          <p class="catalog-item__name catalog-item__name--cowberry">
             <a href="#" class="text__link">
               Сливочное с брусничным
               джемом
@@ -457,7 +457,7 @@
           <p class="catalog__price price">440₽
             <span class="price__measure">/кг</span>
           </p>
-          <p class="catalog-item__name">
+          <p class="catalog-item__name catalog-item__name--vanilla">
             <a href="#" class="text__link">
               Сливочно-ванильное с
               кусочками шоколада
@@ -533,7 +533,7 @@
       <h3 class="visually-hidden">Пагинация</h3>
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-back">
-          <a href="#"> &lt; </a>
+          <a  class="pagination__back-link"></a>
         </li>
         <li class="pagination-item pagination-item-current">
           <a href="#">1</a>
@@ -551,7 +551,7 @@
           <a href="#">5</a>
         </li>
         <li class="pagination-item another-page">
-          <a href="#">&gt;</a>
+          <a href="#" class="pagination__forw-link"></a>
         </li>
       </ul>
     </section>
@@ -560,7 +560,7 @@
 
   <footer class="main-footer">
     <div class="container container__catalog">
-      <ul class="social__list">
+      <ul class="social__list social__list-catalog">
         <li class="social__item">
           <a href="#" class="social__item-tw">
             <span class="visually-hidden"> Твиттер </span>
@@ -586,7 +586,7 @@
         </li>
       </ul>
 
-    <div class="aboutus">
+    <div class="aboutus aboutus-catalog">
      <div class="aboutus-production">
        <a href="" class="aboutus__heart">
          <strong> Для поставщиков</strong>
