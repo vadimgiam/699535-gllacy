@@ -157,16 +157,6 @@ body {
   line-height: 16px;
 }
 
-/*.user-navigation__item a {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.user-navigation__item a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-}
-*/
 .user-navigation__basket {
   margin-left: -31px;
   padding-bottom: 28px;
@@ -229,27 +219,7 @@ body {
     position: relative;
 }
 
-/*
-.button__search::before {
-    content: "";
-    background-color:rgba(255, 255, 255, 0.2);
-    width: 33px;
-    height: 33px;
-    position: absolute;
-    left: 0px;
-    top: -10px;
-    border-radius: 50%;
-    background-image: url(../img/svg/lup.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.button__search:hover::before{
-    content: "";
-    background-color:white;
-    width: 33px;
-    height: 33px;
-    background-image: url(../img/lup.png);
-}*/
+
 .button__search-svg {
   display: block;
   width: 32px;
@@ -267,24 +237,8 @@ body {
 .button__search-svg:hover path{
 fill: black;
 }
-/*
-.button__login::before{
-    content: "";
-    background-image: url(../img/svg/in.svg);
-    width: 22px;
-    height:22px;
-    position: absolute;
-    left: -25px;
-    top: -5px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.button__login:hover::before{
-    content: "";
-    background-image: url(../img/inblack.png);
-}
-*/
+
+
 .button__login {
   display: block;
   width: 92px;
@@ -1127,6 +1081,9 @@ padding-left: 20px;
   background-color:white;
   color: black;
   cursor: pointer;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 169px center ;
 }
 .sorting__list {
   border: none;
@@ -1138,9 +1095,15 @@ padding-left: 20px;
   font: inherit;
   border-radius: 25px;
   padding: 0;
-  padding: 8px 8px;
+  padding: 7px 8px;
   padding-left: 12px;
   padding-bottom: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 34px;
+  background-image: url(../img/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 169px center ;
 }
 
 .filters__range-input {
@@ -1250,8 +1213,8 @@ padding-left: 20px;
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 7px;
-  height: 7px;
+  width: 7.5px;
+  height: 7.5px;
   border-radius: 50%;
   background-color: white;
 }
@@ -1560,13 +1523,17 @@ display: block;
 
 .popup-feedback {
   background-color: #f8f7f4;
-  max-width: 480px;
+  width: 480px;
   height: auto;
   border-radius: 10px;
   margin: 0;
   padding: 0;
-  position: relative;
+  position: fixed;
   display: none;
+  position: absolute;
+  top: 327px;
+  left: 478px;
+  z-index: 20;
 }
 
 .feedback-title {
@@ -1616,7 +1583,6 @@ button.button__close {
   font: inherit;
   font-size: 0;
   background-color: transparent;
-  cursor: pointer;
 
 }
 .button__close::before {
@@ -1628,6 +1594,7 @@ button.button__close {
   height: 22px;
   left: 418px;
   top: -2px;
+  cursor: pointer;
 }
 
 /*Базовая стилизация popup-feedback close*/
@@ -1686,6 +1653,9 @@ justify-content: flex-start;
 }
 .info__list-item--catalog.info__list-item--catalog-page {
   margin-left: -12px;
+}
+.info__list-item--catalog-page a {
+  text-decoration: none;
 }
 .info__list-item--catalog {
   margin-left: -12px;
@@ -1901,7 +1871,7 @@ advantages__delivery {
   padding: 0;
   margin:0 auto;
   padding: 0 27px;
-  border-bottom:1px solid #e6ebe9;
+  border-bottom:1px solid rgba(255,255,255,0.3);
   margin-bottom: 18px;
 }
 .filter {
@@ -2168,4 +2138,47 @@ iframe {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+@keyframes bounce {
+  from {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-1250px);
+  }
+  100% {
+      transform: translateY(-1800px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
