@@ -1520,6 +1520,13 @@ display: block;
 /*Базовая стилизация footer close*/
 
 /*Базовая стилизация popup-feedback*/
+/*.popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}*/
 
 .popup-feedback {
   background-color: #f8f7f4;
@@ -1530,7 +1537,7 @@ display: block;
   padding: 0;
   position: fixed;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 327px;
   left: 478px;
   z-index: 20;
