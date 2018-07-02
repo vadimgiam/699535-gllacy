@@ -1520,13 +1520,16 @@ display: block;
 /*Базовая стилизация footer close*/
 
 /*Базовая стилизация popup-feedback*/
-/*.popup-bg {
+.popup-bg {
   position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: none;
-}*/
+  z-index: 19;
+}
 
 .popup-feedback {
   background-color: #f8f7f4;
@@ -1536,8 +1539,7 @@ display: block;
   margin: 0;
   padding: 0;
   position: fixed;
-  display: none;
-  position: fixed;
+  display: block;
   top: 327px;
   left: 478px;
   z-index: 20;
@@ -1584,22 +1586,22 @@ width: 255px;
 }
 button.button__close {
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 0px;
+  height: 0px;
   border: none;
   font: inherit;
   font-size: 0;
   background-color: transparent;
-
+  left: -519px;
 }
 .button__close::before {
   content: "";
   position: absolute;
   background-image: url(../img/svg/close.svg);
   background-repeat: no-repeat;
-  width: 22px;
-  height: 22px;
-  left: 418px;
+  width: 18px;
+  height: 18px;
+  left: 966px;
   top: -2px;
   cursor: pointer;
 }
@@ -1878,8 +1880,17 @@ advantages__delivery {
   padding: 0;
   margin:0 auto;
   padding: 0 27px;
-  border-bottom:1px solid rgba(255,255,255,0.3);
-  margin-bottom: 18px;
+
+  margin-bottom: 49px;
+}
+.main-inner.container::after {
+  content: "";
+  position: absolute;
+  top: 1546px;
+  left: 140px;
+  background-color: rgba(255,255,255,0.3);
+  width: 1146px;
+  height: 1px;
 }
 .filter {
   margin: 0;
