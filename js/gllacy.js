@@ -1,4 +1,5 @@
 
+"use strict"
 var link = document.querySelector(".button__feedback");
 var popup = document.querySelector(".popup-bg");
 var close = popup.querySelector(".button__close");
@@ -28,12 +29,16 @@ link.addEventListener("click", function(evt){
   } else {
     customer.focus();
   }
+  body.addEventListener("click", onBodyClick);
+  document.querySelector('.popup-feedback').addEventListener(`click`, onFormClick);
+  evt.stopPropagation();
 });
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("popup-show");
   popup.classList.remove("popup-error");
+  body.removeEventListener('click', onBodyClick);
 });
 
 form.addEventListener("submit", function (evt) {
@@ -61,20 +66,7 @@ if (popup.classList.contains("popup-show")) {
 
 });
 
-body.addEventListener("click", function(evt){
 
-
-  if (popup.classList.contains("popup-show")) {
-    popup.classList.remove("popup-show");
-    popup.classList.remove("popup-error");
-  }
-});
-
-body.removeEventListener("click", function(evt){
-  if (!popup.classList.contains("popup-show")){
-
-  }
-});
 
 
 
