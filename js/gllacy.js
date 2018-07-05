@@ -82,7 +82,7 @@ window.addEventListener("keydown", function (evt) {
 
 var texts = document.querySelectorAll (".slider-title__nonumber");
 var controls = document.querySelectorAll('.silder-btn');
-
+var images = document.querySelectorAll(".slider__bg.slider__bg2.slider__bg3");
 
 
 var onControllClick = function() {
@@ -90,14 +90,17 @@ var onControllClick = function() {
 
   for (var j = 0; j < controls.length; j++) {
     texts[j].classList.add("visually-hidden");
+
   }
   texts[currentText].classList.remove("visually-hidden");
+
 };
 
 for (var i = 0; i < controls.length; i++) {
   controls[i].dataset.index = i;
   controls[i].addEventListener('click', onControllClick);
 }
+
 
 
 

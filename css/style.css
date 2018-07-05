@@ -1694,8 +1694,9 @@ button.button__login:hover {
   padding: 0;
   position: fixed;
   display: block;
-  top: 327px;
-  left: 478px;
+  top: 100px;
+  left: 50%;
+  margin-left: -240px;
   z-index: 20;
   animation: bounce 0.6s;
 }
