@@ -57,7 +57,7 @@ form.addEventListener("submit", function (evt) {
   if (!customer.value || !email.value || !textarea.value) {
     evt.preventDefault();
     popup.classList.add("popup-error");
-    popup.offsetWidth = popup.offsetWidth;
+   // popup.offsetWidth = popup.offsetWidth;
   } else {
     if (isStorageSupport) {
       localStorage.setItem("customer", customer.value);
@@ -78,8 +78,26 @@ window.addEventListener("keydown", function (evt) {
 
 });
 
+/*Слайдер*/
+
+var texts = document.querySelectorAll (".slider-title__nonumber");
+var controls = document.querySelectorAll('.silder-btn');
 
 
+
+var onControllClick = function() {
+  var currentText = Number(document.querySelector('input:checked').dataset.index);
+
+  for (var j = 0; j < controls.length; j++) {
+    texts[j].classList.add("visually-hidden");
+  }
+  texts[currentText].classList.remove("visually-hidden");
+};
+
+for (var i = 0; i < controls.length; i++) {
+  controls[i].dataset.index = i;
+  controls[i].addEventListener('click', onControllClick);
+}
 
 
 
