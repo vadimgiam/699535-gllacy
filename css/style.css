@@ -51,7 +51,6 @@ body {
 }
 
 .info__list-item-link {
-  padding: 0;
   padding: 6px 13px;
   background-color: transparent;
   border: none;
@@ -62,15 +61,12 @@ body {
   background-color: #ffffff;
   color: black;
   border-radius: 25px;
-  padding: 0;
   padding: 6px 13px;
   text-decoration-color: transparent;
 }
 
 .item-link-catalog {
   background-color: rgb(208, 112, 88);
-  border-radius: 5px;
-  padding: 0;
   margin: 0;
   padding: 6px 13px;
   border-radius: 25px;
@@ -81,11 +77,18 @@ body {
 .text__link {
   text-decoration-color: rgba(255, 255, 255, 0.5);
 }
-
+.hits__text-link {
+  text-align: center;
+  display: block;
+}
+.text__link {
+  text-align: center;
+  display: block;
+}
 .main-header__info-list .info__list-item-link:active,
 .main-header__info-list .info__list-item-link:focus {
   background-color: rgba(248, 247, 244, 0.988);
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
   text-decoration-color: transparent;
   color: black;
 }
@@ -209,7 +212,7 @@ body {
   background-color: #f8f7f4;
   max-width: 278px;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   z-index: 9;
 }
 
@@ -278,7 +281,6 @@ body {
   width: 92px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 0;
   text-decoration: none;
   margin-right: 40px;
   padding-top: 7px;
@@ -320,7 +322,6 @@ body {
 
 .button__basket {
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
   padding-left: 43px;
   padding-right: 18px;
   padding-top: 9px;
@@ -384,7 +385,6 @@ body {
 
 .basket-full {
   background-color: white;
-  border-radius: 25px;
   padding-left: 43px;
   padding-right: 18px;
   padding-top: 7px;
@@ -397,7 +397,7 @@ body {
 
 .form-search {
   background-color: #f8f7f4;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   width: 340px;
   height: 84px;
   border-radius: 5px;
@@ -429,7 +429,6 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   outline: none;
-  border: solid 2px;
   border-color: #b4d3f2;
   border: none;
   box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
@@ -442,7 +441,7 @@ textarea:focus {
 .basket-popup {
   background-color: #f8f7f4;
   box-sizing: border-box;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   max-height: 244px;
   max-width: 540px;
@@ -546,7 +545,7 @@ textarea:focus {
 }
 
 .basket-popup__cell-img-strawberry {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .basket-popup__cell--name2 {
@@ -565,7 +564,7 @@ textarea:focus {
 
 .button {
   background-image: linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
   border: none;
   font: inherit;
   color: white;
@@ -579,18 +578,17 @@ textarea:focus {
 
 .button:hover {
   background-image: linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.004);
 }
 
 .button:active {
   background-image: linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  box-shadow: 0 2px 2px 0 rgba(148, 39, 24, 0.004);
   outline: none;
 }
 
 .button__subscription {
   margin: 0;
-  padding: 0;
   margin-left: 8px;
   padding-left: 8px;
   padding-right: 11px;
@@ -611,18 +609,13 @@ textarea:focus {
   border: none;
   font: inherit;
   color: white;
-  font-size: 18px;
-  line-height: 22px;
   cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
   background-image: -moz-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   font-size: 32px;
   line-height: 44px;
-  padding: 0;
   padding: 10px 40px;
   border-radius: 30px;
   text-align: center;
@@ -632,12 +625,12 @@ textarea:focus {
 
 .button__slider:hover {
   background-image: linear-gradient( 90deg, rgb(236, 111, 94) 0%, rgb(245, 134, 105) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.004);
 }
 
 .button__slider:active {
   background-image: linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
   outline: none;
 }
 
@@ -659,7 +652,6 @@ button.button__login:hover {
 }
 
 .button__feedback-popup {
-  padding: 0;
   margin: 0;
   margin-bottom: 15px;
   margin-left: 291px;
@@ -820,7 +812,7 @@ button.button__login:hover {
   height: 408px;
   border-radius: 5px;
   background-position: 50% 50%;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   display: none;
 }
 
@@ -832,7 +824,6 @@ button.button__login:hover {
 
 .catalog-hits__button,
 .catalog__button {
-  padding: 0;
   padding-left: 19px;
   padding-right: 18px;
   padding-top: 10px;
@@ -842,6 +833,7 @@ button.button__login:hover {
   left: 29px;
   top: 334px;
   display: none;
+  text-decoration: none;
 }
 
 .catalog-hits__item:hover .catalog-hits__button,
@@ -1053,6 +1045,7 @@ button.button__login:hover {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+  max-width: 176px;
 }
 
 .feedback__tel {
@@ -1157,8 +1150,7 @@ button.button__login:hover {
   border: 2px solid white;
   border-radius: 25px;
   cursor: pointer;
-  padding: 0;
-  padding: 10px 34px;
+  padding: 9px 34px;
 }
 
 .filters__button .button__form:hover {
@@ -1168,13 +1160,13 @@ button.button__login:hover {
 
 .filters__button .button__form:active {
   background-color: rgb(237, 237, 237);
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
   color: black;
   outline: none;
 }
 
 .sorting__list:hover {
-  background-color: white;
+
   color: black;
   cursor: pointer;
   background-image: url(../img/arrow.png);
@@ -1191,7 +1183,6 @@ button.button__login:hover {
   font-weight: 100;
   font: inherit;
   border-radius: 25px;
-  padding: 0;
   padding: 7px 8px;
   padding-left: 12px;
   padding-bottom: 10px;
@@ -1201,6 +1192,13 @@ button.button__login:hover {
   background-image: url(../img/svg/arrow.svg);
   background-repeat: no-repeat;
   background-position: 169px center;
+}
+.sorting__list .sorting__list__item {
+background-color: white;
+color: black;
+}
+.sorting__list::-ms-expand {
+  display: none;
 }
 
 .filters__range-input {
@@ -1629,7 +1627,10 @@ button.button__login:hover {
   color: white;
   display: block;
 }
-
+.html-link {
+  display: block;
+  text-decoration: none;
+}
 .produced a,
 .produced p {
   font-size: 12px;
@@ -1863,7 +1864,6 @@ button.button__close {
 .mode__text-wrapper {
   width: 1146px;
   margin: 0;
-  padding: 0;
   margin: 0 auto;
   padding: 0 27px;
 }
@@ -1919,7 +1919,6 @@ button.button__close {
 .slider {
   width: 1146px;
   margin: 0;
-  padding: 0;
   margin: 0 auto;
   padding: 0 27px;
   margin-bottom: 40px;
@@ -1990,7 +1989,6 @@ button.button__close {
 main.container {
   width: 1146px;
   margin: 0;
-  padding: 0;
   margin: 0 auto;
   padding: 0 27px;
   margin-top: 40px;
@@ -2022,7 +2020,7 @@ main.container {
 .catalog-hits {
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 39px;
 }
 
 .catalog-hits__item,
@@ -2061,10 +2059,6 @@ main.container {
   margin-bottom: 38px;
 }
 
-.advantages__technology,
-advantages__delivery {
-  width: 541px;
-}
 
 .advantages__cont {
   display: flex;
@@ -2100,10 +2094,8 @@ advantages__delivery {
 }
 
 .main-inner.container {
-  margin-top: -35px;
   width: 1146px;
   margin: 0;
-  padding: 0;
   margin: 0 auto;
   padding: 0 27px;
   margin-bottom: 49px;
@@ -2150,7 +2142,6 @@ advantages__delivery {
 
 .fat-radio__list {
   margin: 0;
-  padding: 0;
   display: flex;
   max-width: 415px;
   padding: 8px 12px;
@@ -2160,7 +2151,6 @@ advantages__delivery {
 
 .fillers-checkbox__list {
   margin: 0;
-  padding: 0;
   display: flex;
   max-width: 704px;
   padding: 8px 0px;
@@ -2197,7 +2187,7 @@ advantages__delivery {
 .catalog__item {
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 38px;
 }
 
 .pagination-list {
@@ -2232,7 +2222,6 @@ advantages__delivery {
 .main-footer .container {
   width: 1146px;
   margin: 0;
-  padding: 0;
   margin: 0 auto;
   padding: 0 27px;
   display: flex;
@@ -2298,6 +2287,8 @@ advantages__delivery {
   margin-top: 13px;
   margin-bottom: -14px;
   margin-left: -2px;
+  display: block;
+  text-decoration: none;
 }
 
 /*Сетки footer close*/
@@ -2319,7 +2310,7 @@ advantages__delivery {
   left: -5px;
   top: 30px;
   display: none;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog__list-link {
@@ -2341,7 +2332,6 @@ advantages__delivery {
   top: 37px;
   display: none;
   box-sizing: border-box;
-  padding: 0;
   padding: 20px 15px;
 }
 
