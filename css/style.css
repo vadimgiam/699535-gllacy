@@ -881,6 +881,7 @@ button.button__login:hover {
   margin: 0;
   padding: 0;
   margin-left: 55px;
+
 }
 
 .advantages__image-cow,
@@ -2181,15 +2182,17 @@ main.container {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .catalog__item {
   margin: 0;
   padding: 0;
+  margin-right: 26px;
   margin-bottom: 38px;
 }
-
+.catalog__item:nth-child(4n){
+  margin-right: 0;
+}
 .pagination-list {
   margin: 0;
   padding: 0;
