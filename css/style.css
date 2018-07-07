@@ -265,7 +265,7 @@ body {
   border-radius: 50%;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 5px;
+  padding-top: 6px;
 }
 
 .button__search-svg:hover {
@@ -531,8 +531,8 @@ textarea:focus {
 }
 
 .total-price {
-  padding-left: 405px;
   margin-bottom: 14px;
+  text-align: right;
 }
 
 .cell-name-link {
@@ -603,6 +603,9 @@ textarea:focus {
   min-width: 250px;
   padding-top: 12px;
   padding-bottom: 12px;
+  text-decoration: none;
+  padding-right: 28px;
+  padding-left: 27px;
 }
 
 .button__slider {
@@ -858,7 +861,7 @@ button.button__login:hover {
   font-size: 24px;
   line-height: 30px;
   font-weight: 600;
-  color: black;
+  color: #474542;
   padding: 0;
   margin: 0;
 }
@@ -870,7 +873,7 @@ button.button__login:hover {
 
 .advantages__technology,
 .advantages__delivery {
-  color: black;
+  color: #474542;
   font-weight: 100;
   width: 541px;
   position: relative;
@@ -881,7 +884,6 @@ button.button__login:hover {
   margin: 0;
   padding: 0;
   margin-left: 55px;
-
 }
 
 .advantages__image-cow,
@@ -893,14 +895,14 @@ button.button__login:hover {
 
 .advantages__image-icecream,
 .advantages__image-cow {
-  margin-bottom: 22px;
+  padding-bottom: 22px;
 }
 
 .advantages__image-icecream::before {
   content: "";
   background-image: url(../img/svg/icecream.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+
   position: absolute;
   width: 49px;
   height: 49px;
@@ -912,7 +914,7 @@ button.button__login:hover {
   content: "";
   background-image: url(../img/svg/sheet.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+
   position: absolute;
   width: 49px;
   height: 49px;
@@ -929,7 +931,7 @@ button.button__login:hover {
   width: 49px;
   height: 49px;
   top: -14px;
-  left: 12px;
+  left: 7px;
 }
 
 .advantages__image-fridge::before {
@@ -941,7 +943,7 @@ button.button__login:hover {
   width: 49px;
   height: 49px;
   top: 75px;
-  left: 12px;
+  left: 7px;
 }
 
 .blog-new {
@@ -1063,7 +1065,7 @@ button.button__login:hover {
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  margin-bottom: 23px;
+  margin-bottom: 33px;
 }
 
 .breadcrumbs {
@@ -1077,6 +1079,7 @@ button.button__login:hover {
   font-size: 14px;
   line-height: 16px;
   font-weight: 100;
+  margin-left: 2px;
 }
 
 .breadcrumbs__item a:hover {
@@ -1092,12 +1095,13 @@ button.button__login:hover {
   font-size: 14px;
   font-weight: 100;
   margin-top: 2px;
+  padding-left: 2px;
 }
 
 .breadcrumbs__item:after {
   content: "»";
   margin-right: 4px;
-  margin-left: 9px;
+  margin-left: 5px;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -1225,6 +1229,8 @@ color: black;
   margin: 0;
   padding: 0;
   margin-right: 9px;
+  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 .fat-itemfirst {
@@ -1274,7 +1280,9 @@ color: black;
 .slider__label input[type="radio"]:hover+.slider-indicator {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
+.slider__label input[type="radio"]:active+.slider-indicator {
+  background-color: rgba(255, 255, 255, 1);
+}
 .slider__radio {
   position: absolute;
   top: 428px;
@@ -1290,10 +1298,6 @@ color: black;
   margin: 0;
   margin-bottom: 4px;
   margin-left: 18px;
-}
-
-.fat-item input[type="radio"] {
-  display: none;
 }
 
 .radio__label {
@@ -1338,9 +1342,6 @@ color: black;
 
 /*Декорирование чекбоксов*/
 
-.fillers-item input[type="checkbox"] {
-  display: none;
-}
 
 .checkbox__label {
   position: relative;
@@ -1377,14 +1378,15 @@ color: black;
 .fillers-item {
   margin: 0;
   margin-right: 17px;
+  margin-bottom: 5px;
 }
 
 .fillers-itemfirst {
-  margin-left: 5px;
+  margin-left: -27px;
 }
 
-.fillers-itemsecond {
-  margin-left: 2px;
+.fillers-itemfourth {
+  margin-left: 6px;
 }
 
 .fillers-title {
@@ -1546,7 +1548,7 @@ color: black;
   background-repeat: no-repeat;
   width: 10px;
   height: 15px;
-  background-position: 2px 7px;
+  background-position: 6px 7px;
 }
 
 .pagination__forw-link {
@@ -1611,7 +1613,9 @@ color: black;
 .social__item a:hover {
   opacity: 1;
 }
-
+.social__item a:active {
+  opacity: 0.9;
+}
 .social__item a {
   border: 2px solid rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
@@ -1658,6 +1662,9 @@ color: black;
 
 .aboutus__heart {
   margin-bottom: 4px;
+}
+.aboutus__heart--text {
+  font-weight: 700;
 }
 
 .aboutus__heart::before {
@@ -1746,6 +1753,7 @@ color: black;
   width: 100%;
   margin-bottom: 15px;
   min-height: 146px;
+  padding-top: 12px;
 }
 
 button.button__close {
@@ -1900,6 +1908,7 @@ button.button__close {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-top: 27px;
 }
@@ -2016,12 +2025,21 @@ main.container {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-
+.catalog-hits__item {
+  margin: 0;
+  padding: 0;
+  margin-right: 26px;
+  margin-bottom: 38px;
+}
+.catalog-hits__item:nth-child(4n) {
+  margin-right: 0;
+}
 .catalog-hits {
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
+  margin-bottom: 2px;
 }
 
 .catalog-hits__item,
@@ -2031,7 +2049,7 @@ main.container {
 
 .price {
   position: absolute;
-  top: 166px;
+  top: 164px;
 }
 
 .catalog-item__name {
@@ -2066,7 +2084,7 @@ main.container {
 }
 
 .advantages__delivery {
-  margin-left: 13px;
+  margin-left: 17px;
 }
 
 .other-info {
@@ -2144,8 +2162,11 @@ main.container {
 .fat-radio__list {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 415px;
-  padding: 8px 12px;
+  padding: 0px 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 9px;
   border-radius: 20px;
 }
@@ -2153,9 +2174,10 @@ main.container {
 .fillers-checkbox__list {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 704px;
-  padding: 8px 0px;
-  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 2px;
   padding-right: 3px;
   border-radius: 18px;
 }
@@ -2164,11 +2186,11 @@ main.container {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  margin-left: 14px;
+  margin-left: 17px;
 }
 
 .filters {
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 
 .catalog {
@@ -2197,7 +2219,8 @@ main.container {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 192px;
+  flex-wrap: wrap;
+  max-width: 196px;
   justify-content: space-between;
   margin-left: auto;
 }
@@ -2205,7 +2228,7 @@ main.container {
 .pagination-item {
   margin: 0;
   padding: 0;
-  margin-right: 2px;
+  margin-right: -5px;
 }
 
 .pagination {
@@ -2285,7 +2308,9 @@ main.container {
 .produced {
   margin-left: 225px;
 }
-
+.produced__catalog {
+  margin-left: 222px;
+}
 .aboutus__html {
   margin-top: 13px;
   margin-bottom: -14px;
