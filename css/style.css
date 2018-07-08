@@ -883,7 +883,8 @@ button.button__login:hover {
 .advantages__image-sheet {
   margin: 0;
   padding: 0;
-  margin-left: 55px;
+  margin-left: 56px;
+  position: relative;
 }
 
 .advantages__image-cow,
@@ -891,6 +892,7 @@ button.button__login:hover {
   margin: 0;
   padding: 0;
   margin-left: 65px;
+  position: relative;
 }
 
 .advantages__image-icecream,
@@ -907,7 +909,7 @@ button.button__login:hover {
   width: 49px;
   height: 49px;
   top: -14px;
-  left: 2px;
+  left: -55px;
 }
 
 .advantages__image-sheet::before {
@@ -918,8 +920,8 @@ button.button__login:hover {
   position: absolute;
   width: 49px;
   height: 49px;
-  top: 75px;
-  left: 1px;
+  top: -15px;
+  left: -55px;
 }
 
 .advantages__image-cow::before {
@@ -931,7 +933,7 @@ button.button__login:hover {
   width: 49px;
   height: 49px;
   top: -14px;
-  left: 7px;
+  left: -58px;
 }
 
 .advantages__image-fridge::before {
@@ -942,8 +944,8 @@ button.button__login:hover {
   position: absolute;
   width: 49px;
   height: 49px;
-  top: 75px;
-  left: 7px;
+  top: -15px;
+  left: -58px;
 }
 
 .blog-new {
@@ -1319,6 +1321,7 @@ color: black;
 .radio__label input[type="radio"]:focus+.radio-indicator,
 .radio__label input[type="radio"]:hover+.radio-indicator {
   border-color: rgba(255, 255, 255, 1);
+  outline: #8996a6;
 }
 
 .radio__label input[type="radio"]:checked+.radio-indicator::before,
@@ -1332,7 +1335,10 @@ color: black;
   border-radius: 50%;
   background-color: white;
 }
-
+.radio__label input[type="radio"]:disabled+.radio-indicator {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .radio__label:hover,
 .radio__label:focus {
   border-color: rgba(255, 255, 255, 1);
@@ -1530,7 +1536,7 @@ color: black;
   display: block;
 }
 
-.pagination-item-current a:hover,
+
 .pagination-item a:hover {
   color: white;
 }
@@ -1542,7 +1548,10 @@ color: black;
   height: 26px;
   border-radius: 50%;
 }
-
+.pagination-item-current a:hover{
+  background-color: white;
+  color: black;
+}
 .pagination__back-link {
   background-image: url("../img/back.png");
   background-repeat: no-repeat;
@@ -2124,7 +2133,7 @@ main.container {
   content: "";
   position: absolute;
   top: 1546px;
-  left: 140px;
+
   background-color: rgba(255, 255, 255, 0.3);
   width: 1146px;
   height: 1px;
