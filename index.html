@@ -169,8 +169,8 @@
   </header>
 
   <section class="slider slider__container">
-    <div class="slider__bg slider__bg2 slider__bg3">
-    </div>
+   <!--<div class="slider__bg slider__bg2 slider__bg3">
+    </div>-->
     <h1 class="visually-hidden">Слайдер</h1>
     <div class="slider__radio">
       <form action="https://echo.htmlacademy.ru/" class="slider__radio-form" method="POST">
@@ -198,9 +198,19 @@
       </form>
     </div>
     <div class="slider__title">
-      <p class="slider-title__nonumber slider-title__cream ">Крем-брюле и пломбир с малиновым джемом</p>
-      <p class="slider-title__nonumber slider-title__chockolate visually-hidden">Шоколадный пломбир и лимонный сорбет </p>
-      <p class="slider-title__nonumber slider-title__strawberry visually-hidden">Пломбир с помадкой и клубничный щербет</p>
+      <div class="slide">
+          <div class="slider__bg3 slider-image__nonumber "> <img src="img/Cremebrulee.png" width="1045" height="881" alt="Крембрюле"> </div>
+          <p class="slider-title__nonumber slider-title__cream ">Крем-брюле и пломбир с малиновым джемом</p>
+      </div>
+      <div class="slide slider-hidden">
+          <div class="slider__bg2 slider-image__nonumber "><img src="img/plombir.png" width="1045" height="881" alt="Шоколадныйпломбир"></div>
+          <p class="slider-title__nonumber slider-title__chockolate ">Шоколадный пломбир и лимонный сорбет </p>
+      </div>
+      <div class="slide slider-hidden">
+          <div class="slider__bg slider-image__nonumber"><img src="img/straw.png" width="1045" height="881" alt="Пломбирспомадой"></div>
+          <p class="slider-title__nonumber slider-title__strawberry">Пломбир с помадкой и клубничный щербет</p>
+      </div>
+
     </div>
     <button type="button" class="button__slider">Давайте оба!</button>
   </section>

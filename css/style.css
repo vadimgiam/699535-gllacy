@@ -28,7 +28,9 @@ body {
   background-size: 100%;
   background-color: #849d8f;
 }
-
+.slider-hidden {
+display: none;
+}
 .body-catalog {
   background-color: #94aa9e;
 }
@@ -1976,29 +1978,29 @@ button.button__close {
 
 .slider__bg3 {
   position: absolute;
-  background-image: url(../img/straw.png);
+  /*(background-image: url(../img/straw.png);*/
   top: -25%;
   left: 7%;
   width: 1045px;
   height: 881px;
   z-index: -1;
-  display: block;
+  /*display: block;*/
 }
 
 .slider__bg2 {
   position: absolute;
-  background-image: url(../img/plombir.png);
+  /*background-image: url(../img/plombir.png);*/
   top: -25%;
   left: 7%;
   width: 1045px;
   height: 881px;
   z-index: -1;
-  display: block;
+  /*display: block;*/
 }
 
 .slider__bg {
   position: absolute;
-  background-image: url(../img/Cremebrulee.png);
+ /* background-image: url(../img/Cremebrulee.png);*/
   top: -25%;
   left: 7%;
   width: 1045px;

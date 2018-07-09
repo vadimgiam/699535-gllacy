@@ -79,31 +79,26 @@ window.addEventListener("keydown", function (evt) {
 });
 
 /*Слайдер*/
-
-var texts = document.querySelectorAll (".slider-title__nonumber");
+var slides = document.querySelectorAll('.slide');
 var controls = document.querySelectorAll('.silder-btn');
-var images = document.querySelectorAll(".slider__bg.slider__bg2.slider__bg3");
+var body = document.querySelector('body');
 
+var SLIDES_BACKGROUND = ['#849d8f', '#8996a6', '#9d8b84'];
 
 var onControllClick = function() {
-  var currentText = Number(document.querySelector('input:checked').dataset.index);
+  var currentSlide = Number(document.querySelector('input:checked').dataset.index);
 
-  for (var j = 0; j < controls.length; j++) {
-    texts[j].classList.add("visually-hidden");
-
+for (var j = 0; j < controls.length; j++) {
+    slides[j].classList.add('slider-hidden');
   }
-  texts[currentText].classList.remove("visually-hidden");
-
+  slides[currentSlide].classList.remove('slider-hidden');
+  body.style.backgroundColor = SLIDES_BACKGROUND[currentSlide];
 };
 
 for (var i = 0; i < controls.length; i++) {
   controls[i].dataset.index = i;
   controls[i].addEventListener('click', onControllClick);
 }
-
-
-
-
 
 
 
