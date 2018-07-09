@@ -951,6 +951,7 @@ button.button__login:hover {
 .blog-new {
   background-color: white;
   background-image: url(../img/10ways.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 17px;
   color: black;
@@ -1007,6 +1008,7 @@ button.button__login:hover {
   box-sizing: border-box;
   background-color: #f8f7f4;
   background-image: url(../img/subscriptionbg.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 17px;
   color: #5a5a5a;
