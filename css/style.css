@@ -861,7 +861,7 @@ button.button__login:hover {
   font-size: 24px;
   line-height: 30px;
   font-weight: 600;
-  color: #474542;
+  color: #323232;
   padding: 0;
   margin: 0;
 }
@@ -873,7 +873,7 @@ button.button__login:hover {
 
 .advantages__technology,
 .advantages__delivery {
-  color: #474542;
+  color: #323232;
   font-weight: 100;
   width: 541px;
   position: relative;
@@ -2033,7 +2033,6 @@ main.container {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .catalog-hits__item {
@@ -2126,7 +2125,7 @@ main.container {
   margin: 0;
   margin: 0 auto;
   padding: 0 27px;
-  margin-bottom: 49px;
+  margin-bottom: 39px;
 }
 
 .main-inner.container::after {
@@ -2230,16 +2229,18 @@ main.container {
   display: flex;
   flex-wrap: wrap;
   max-width: 196px;
-  justify-content: space-between;
   margin-left: auto;
 }
 
 .pagination-item {
   margin: 0;
   padding: 0;
-  margin-right: -5px;
+  margin-right: 3px;
+  padding-bottom: 9px;
 }
-
+.pagination-item:nth-child(7n) {
+  margin-right: -24px;
+}
 .pagination {
   margin: 0;
   padding: 0;
